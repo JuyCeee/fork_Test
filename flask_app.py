@@ -116,7 +116,10 @@ def users():
     return render_template("users.html", users=users)
 
 
-
+@app.route("/users", methods=["GET"])
+@login_required
+def users():
+    pass
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
