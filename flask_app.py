@@ -109,6 +109,11 @@ def logout():
 
 
 # App routes
+@app.route("/users", methods=["GET"])
+@login_required
+def users():
+    pass
+
 @app.route("/", methods=["GET", "POST"])
 @login_required
 def index():
