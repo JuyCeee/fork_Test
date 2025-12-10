@@ -9,52 +9,71 @@ DROP TABLE message;
 DROP TABLE class;
 DROP TABLE times;
 
+--We could also use INT for a couple of things and just number them through but at the end we'd prolly
+--have to make more tables. Also it mostly depends on how we recieve the info.
+
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY,
 );
 
 CREATE TABLE teacher (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    initials VARCHAR(10) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE room (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    number VARCHAR(10) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE absence (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(50) NOT NULL,
+    status VARCHAR(50) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    shortened VARCHAR (10) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE grade (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    mark FLOAT,
+    weight FLOAT,
+    FOREIGN KEY subject_id REFERENCES subject(id)
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE homework (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    text VARCHAR(500),
+    bool BOOLEAN NOT NULL,
+    title VARCHAR(100),
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE message (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    message VARCHAR(500),
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE class (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(10) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
-CREATE TABLE times (
+CREATE TABLE time (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    time INT NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
