@@ -12,8 +12,12 @@ DROP TABLE times;
 --We could also use INT for a couple of things and just number them through but at the end we'd prolly
 --have to make more tables. Also it mostly depends on how we recieve the info.
 
+--We'll have to check if I put the foreign keys in the right tables
+
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY teacher_id REFERENCES teacher(id)
+    FOREIGN KEY class_id REFERENCES class(id)
 );
 
 CREATE TABLE teacher (
