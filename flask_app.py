@@ -74,7 +74,6 @@ def login():
         footer_link_label="Registrieren"
     )
 
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     error = None
