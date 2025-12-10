@@ -15,38 +15,47 @@ CREATE TABLE timetable (
 
 CREATE TABLE teacher (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE room (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE absence (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE grade (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE homework (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE message (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE class (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 CREATE TABLE times (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
 
