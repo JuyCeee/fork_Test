@@ -101,25 +101,25 @@ CREATE TABLE special (
 --INSERT INTO timetable () VALUES
 
 INSERT INTO teacher (name, initials) VALUES
-    (Martin Lieberherr, LiM),
-    (Marcel Naef, NaM),
-    (Riccardo Ferrario, FeR);
+    ('Martin Lieberherr', 'LiM'),
+    ('Marcel Naef', 'NaM'),
+    ('Riccardo Ferrario', 'FeR');
 
 
 INSERT INTO room (number) VALUES
-    (p342),
-    (m513),
-    (m423);
+    ('p342'),
+    ('m513'),
+    ('m423');
 
 INSERT INTO absence (type, status) VALUES
-    (Verspätung, Entschuldigt),
-    (Verspätung, Unentschuldigt),
-    (Abwesend, Entschuldigt);
+    ('Verspätung', 'Entschuldigt'),
+    ('Verspätung', 'Unentschuldigt'),
+    ('Abwesend', 'Entschuldigt');
 
 INSERT INTO subject (name, shortened) VALUES
-    (Physik, Ph),
-    (Deutsch, D),
-    (Mathematik, M);
+    ('Physik', 'Ph'),
+    ('Deutsch', 'D'),
+    ('Mathematik', 'M');
 
 INSERT INTO grade (mark, weight) VALUES
     (4.5, 1),
