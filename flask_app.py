@@ -122,7 +122,7 @@ def users():
 @login_required
 def absences():
     absences = db_read("SELECT username FROM users ORDER BY username", ())
-    return render_template("absences.html", absences=absences)
+    return render_template("absences.html", users=absences)
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
