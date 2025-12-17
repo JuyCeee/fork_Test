@@ -106,8 +106,6 @@ def logout():
     return redirect(url_for("index"))
 
 
-
-# App routes
 @app.route("/users", methods=["GET"])
 @login_required
 def users():
@@ -119,6 +117,12 @@ def users():
 #@login_required
 #def users():
 #    pass
+
+@app.route("/absences", methods=["GET"])
+@login_required
+def absences():
+    absences = db_read("SELECT username FROM users ORDER BY username", ())
+    return render_template("absences.html", absences=absences)
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
