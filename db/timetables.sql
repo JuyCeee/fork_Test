@@ -96,3 +96,37 @@ CREATE TABLE special (
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 
 
+--Temp Testdata
+
+INSERT INTO teacher (name, initials) VALUES
+    (Martin Lieberherr, LiM),
+    (Marcel Naef, NaM),
+    (Riccardo Ferrario, FeR);
+
+
+INSERT INTO room (number) VALUES
+    (p342),
+    (m513),
+    (m423);
+
+--INSERT INTO absence (type, status) VALUES
+
+INSERT INTO subject (name, shortened) VALUES
+    (Physik, Ph),
+    (Deutsch, D),
+    (Mathematik, M);
+
+--INSERT INTO grade (mark, weight) VALUES
+
+--INSERT INTO homework (text, file, title) VALUES
+
+--INSERT INTO message (message) VALUES
+
+INSERT INTO class (name) VALUES
+    (3h),
+    (3g),
+    (2h);
+
+--INSERT INTO times (time) VALUES
+
+--INSERT INTO special (type) VALUES
