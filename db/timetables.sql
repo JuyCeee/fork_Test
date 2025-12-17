@@ -131,9 +131,9 @@ INSERT INTO grade (mark, weight) VALUES
 --INSERT INTO message (message) VALUES
 
 INSERT INTO class (name) VALUES
-    (3h),
-    (3g),
-    (2h);
+    ('3h'),
+    ('3g'),
+    ('2h');
 
 --INSERT INTO times (time) VALUES
 
