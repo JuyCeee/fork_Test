@@ -109,7 +109,10 @@ INSERT INTO room (number) VALUES
     (m513),
     (m423);
 
---INSERT INTO absence (type, status) VALUES
+INSERT INTO absence (type, status) VALUES
+    (Verspätung, Entschuldigt),
+    (Verspätung, Unentschuldigt),
+    (Abwesend, Entschuldigt);
 
 INSERT INTO subject (name, shortened) VALUES
     (Physik, Ph),
