@@ -14,6 +14,8 @@ DROP TABLE times;
 
 --We'll have to check if I put the foreign keys in the right tables
 
+--Have to add n-n possibilities for tabled, otherwise should mostly be good
+
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY,
     FOREIGN KEY teacher_id REFERENCES teacher(id)
@@ -25,6 +27,7 @@ CREATE TABLE timetable (
     FOREIGN KEY message_id REFERENCES message(id)
     FOREIGN KEY class_id REFERENCES class(id)
     FOREIGN KEY times_id REFERENCES times(id)
+    FOREIGN KEY special_id REFERENCES special(id)
 );
 
 CREATE TABLE teacher (
@@ -65,7 +68,7 @@ CREATE TABLE grade (
 CREATE TABLE homework (
     id INT AUTO_INCREMENT PRIMARY KEY,
     text VARCHAR(500),
-    bool BOOLEAN NOT NULL,
+    file BOOLEAN NOT NULL,
     title VARCHAR(100),
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
@@ -87,5 +90,9 @@ CREATE TABLE times (
     time INT NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
+CREATE TABLE special (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(100) NOT NULL,
+    FOREIGN KEY timetable_id REFERENCES timetable(id)
 
 
