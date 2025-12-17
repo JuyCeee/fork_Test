@@ -116,7 +116,10 @@ INSERT INTO subject (name, shortened) VALUES
     (Deutsch, D),
     (Mathematik, M);
 
---INSERT INTO grade (mark, weight) VALUES
+INSERT INTO grade (mark, weight) VALUES
+    (4.5, 1),
+    (6, 1),
+    (3.25, 2);
 
 --INSERT INTO homework (text, file, title) VALUES
 
