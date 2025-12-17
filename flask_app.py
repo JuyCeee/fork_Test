@@ -124,6 +124,24 @@ def absences():
     absences = db_read("SELECT username FROM users ORDER BY username", ())
     return render_template("absences.html", absences=absences)
 
+@app.route("/grades", methods=["GET"])
+@login_required
+def grades():
+    grades = db_read("SELECT username FROM users ORDER BY username", ())
+    return render_template("grades.html", grades=grades)
+
+@app.route("/overview", methods=["GET"])
+@login_required
+def overview():
+    overview = db_read("SELECT username FROM users ORDER BY username", ())
+    return render_template("overview.html", overview=overview)
+
+@app.route("/timetable", methods=["GET"])
+@login_required
+def timetable():
+    timetable = db_read("SELECT username FROM users ORDER BY username", ())
+    return render_template("timetable.html", timetable=timetable)
+
 @app.route("/", methods=["GET", "POST"])
 @login_required
 def index():
