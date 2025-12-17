@@ -98,6 +98,8 @@ CREATE TABLE special (
 
 --Temp Testdata
 
+--INSERT INTO timetable () VALUES
+
 INSERT INTO teacher (name, initials) VALUES
     (Martin Lieberherr, LiM),
     (Marcel Naef, NaM),
