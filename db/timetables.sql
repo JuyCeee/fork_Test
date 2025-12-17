@@ -7,7 +7,7 @@ DROP TABLE grade;
 DROP TABLE homework;
 DROP TABLE message;
 DROP TABLE class;
-DROP TABLE time;
+DROP TABLE times;
 
 --We could also use INT for a couple of things and just number them through but at the end we'd prolly
 --have to make more tables. Also it mostly depends on how we recieve the info.
@@ -75,7 +75,7 @@ CREATE TABLE class (
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
-CREATE TABLE time (
+CREATE TABLE times (
     id INT AUTO_INCREMENT PRIMARY KEY,
     time INT NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
