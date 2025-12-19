@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
   <ul class="user-list">
-        {% for absence in absence %}
+        {% for instance in absence %}
           <li class="user-name">
-            {{ absence.status }}
+            {{ instance.status }}
           </li>
         {% endfor %}
       </ul>
