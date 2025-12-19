@@ -7,7 +7,7 @@ DROP TABLE grade;
 DROP TABLE homework;
 DROP TABLE message;
 DROP TABLE class;
-DROP TABLE times;
+DROP TABLE timecodes;
 
 --We could also use INT for a couple of things and just number them through but at the end we'd prolly
 --have to make more tables. Also it mostly depends on how we recieve the info.
@@ -18,16 +18,6 @@ DROP TABLE times;
 
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    FOREIGN KEY teacher_id REFERENCES teacher(id)
-    FOREIGN KEY room_id REFERENCES room(id)
-    FOREIGN KEY absence_id REFERENCES absence(id)
-    FOREIGN KEY subject_id REFERENCES subject(id)
-    FOREIGN KEY grade_id REFERENCES grade(id)
-    FOREIGN KEY homework_id REFERENCES homework(id)
-    FOREIGN KEY message_id REFERENCES message(id)
-    FOREIGN KEY class_id REFERENCES class(id)
-    FOREIGN KEY times_id REFERENCES times(id)
-    FOREIGN KEY special_id REFERENCES special(id)
 );
 
 CREATE TABLE teacher (
@@ -39,7 +29,7 @@ CREATE TABLE teacher (
 
 CREATE TABLE room (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    number VARCHAR(10) NOT NULL,
+    num VARCHAR(10) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
@@ -67,7 +57,7 @@ CREATE TABLE grade (
 
 CREATE TABLE homework (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    text VARCHAR(500),
+    txt VARCHAR(500),
     file BOOLEAN NOT NULL,
     title VARCHAR(100),
     FOREIGN KEY timetable_id REFERENCES timetable(id)
@@ -106,7 +96,7 @@ INSERT INTO teacher (name, initials) VALUES
     ('Riccardo Ferrario', 'FeR');
 
 
-INSERT INTO room (number) VALUES
+INSERT INTO room (num) VALUES
     ('p342'),
     ('m513'),
     ('m423');
@@ -126,7 +116,7 @@ INSERT INTO grade (mark, weight) VALUES
     (6, 1),
     (3.25, 2);
 
-INSERT INTO homework (text, file, title) VALUES
+INSERT INTO homework (txt, file, title) VALUES
     ('Lesen S.20-21', false, 'Geschichte HA'),
     ('Aufgabe 34 a), b) und c)', true, 'Mathematik Aufgaben'),
     ('', false, 'Auftrag 3 lösen');
