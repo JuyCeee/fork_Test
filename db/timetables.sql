@@ -57,7 +57,7 @@ CREATE TABLE grade (
 
 CREATE TABLE homework (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    text VARCHAR(500),
+    txt VARCHAR(500),
     file BOOLEAN NOT NULL,
     title VARCHAR(100),
     FOREIGN KEY timetable_id REFERENCES timetable(id)
@@ -116,7 +116,7 @@ INSERT INTO grade (mark, weight) VALUES
     (6, 1),
     (3.25, 2);
 
---INSERT INTO homework (text, file, title) VALUES
+--INSERT INTO homework (txt, file, title) VALUES
 
 --INSERT INTO message (message) VALUES
 
