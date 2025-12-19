@@ -24,12 +24,14 @@ CREATE TABLE teacher (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     initials VARCHAR(10) NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
 CREATE TABLE room (
     id INT AUTO_INCREMENT PRIMARY KEY,
     num VARCHAR(10) NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
@@ -37,6 +39,7 @@ CREATE TABLE absence (
     id INT AUTO_INCREMENT PRIMARY KEY,
     type VARCHAR(50) NOT NULL,
     status VARCHAR(50) NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
@@ -44,6 +47,7 @@ CREATE TABLE subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     shortened VARCHAR (10) NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
@@ -51,6 +55,8 @@ CREATE TABLE grade (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mark FLOAT,
     weight FLOAT,
+    timetable_id INT,
+    subject_id INT,
     FOREIGN KEY (subject_id) REFERENCES subject(id),
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
@@ -60,29 +66,34 @@ CREATE TABLE homework (
     txt VARCHAR(500),
     file BOOLEAN NOT NULL,
     title VARCHAR(100),
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
 CREATE TABLE message (
     id INT AUTO_INCREMENT PRIMARY KEY,
     message VARCHAR(500),
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
 CREATE TABLE class (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(10) NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 
 CREATE TABLE times (
     id INT AUTO_INCREMENT PRIMARY KEY,
     time INT NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 );
 CREATE TABLE special (
     id INT AUTO_INCREMENT PRIMARY KEY,
     type VARCHAR(100) NOT NULL,
+    timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 
 
