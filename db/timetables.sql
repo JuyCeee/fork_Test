@@ -51,7 +51,7 @@ CREATE TABLE grade (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mark FLOAT,
     weight FLOAT,
-    FOREIGN KEY subject_id REFERENCES subject(id)
+    FOREIGN KEY subject_id REFERENCES subject(id),
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
