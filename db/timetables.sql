@@ -1,13 +1,13 @@
-DROP TABLE timetable;
-DROP TABLE teacher;
-DROP TABLE room;
-DROP TABLE absence;
-DROP TABLE subject;
-DROP TABLE grade;
-DROP TABLE homework;
-DROP TABLE message;
-DROP TABLE class;
-DROP TABLE timecodes;
+--DROP TABLE timetable;
+--DROP TABLE teacher;
+--DROP TABLE room;
+--DROP TABLE absence;
+--DROP TABLE subject;
+--DROP TABLE grade;
+--DROP TABLE homework;
+--DROP TABLE message;
+--DROP TABLE class;
+--DROP TABLE timecodes;
 
 --We could also use INT for a couple of things and just number them through but at the end we'd prolly
 --have to make more tables. Also it mostly depends on how we recieve the info.
