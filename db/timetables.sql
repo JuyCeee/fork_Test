@@ -18,16 +18,6 @@ DROP TABLE timestamps;
 
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    FOREIGN KEY teacher_id REFERENCES teacher(id)
-    FOREIGN KEY room_id REFERENCES room(id)
-    FOREIGN KEY absence_id REFERENCES absence(id)
-    FOREIGN KEY subject_id REFERENCES subject(id)
-    FOREIGN KEY grade_id REFERENCES grade(id)
-    FOREIGN KEY homework_id REFERENCES homework(id)
-    FOREIGN KEY message_id REFERENCES message(id)
-    FOREIGN KEY class_id REFERENCES class(id)
-    FOREIGN KEY times_id REFERENCES times(id)
-    FOREIGN KEY special_id REFERENCES special(id)
 );
 
 CREATE TABLE teacher (
