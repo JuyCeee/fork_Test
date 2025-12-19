@@ -9,12 +9,12 @@ DROP TABLE message;
 DROP TABLE class;
 DROP TABLE timecodes;
 
---We could also use INT for a couple of things and just number them through but at the end we'd prolly
---have to make more tables. Also it mostly depends on how we recieve the info.
+-- We could also use INT for a couple of things and just number them through but at the end we'd prolly
+-- have to make more tables. Also it mostly depends on how we recieve the info.
 
---We'll have to check if I put the foreign keys in the right tables
+-- We'll have to check if I put the foreign keys in the right tables
 
---Have to add n-n possibilities for tabled, otherwise should mostly be good
+-- Have to add n-n possibilities for tabled, otherwise should mostly be good
 
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY
