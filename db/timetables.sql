@@ -17,7 +17,7 @@ DROP TABLE timecodes;
 --Have to add n-n possibilities for tabled, otherwise should mostly be good
 
 CREATE TABLE timetable (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY
 );
 
 CREATE TABLE teacher (
