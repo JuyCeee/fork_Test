@@ -75,7 +75,7 @@ CREATE TABLE class (
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
-CREATE TABLE timestamps (
+CREATE TABLE timecodes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     time INT NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
