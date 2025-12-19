@@ -29,7 +29,7 @@ CREATE TABLE teacher (
 
 CREATE TABLE room (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    number VARCHAR(10) NOT NULL,
+    num VARCHAR(10) NOT NULL,
     FOREIGN KEY timetable_id REFERENCES timetable(id)
 );
 
@@ -96,7 +96,7 @@ INSERT INTO teacher (name, initials) VALUES
     ('Riccardo Ferrario', 'FeR');
 
 
-INSERT INTO room (number) VALUES
+INSERT INTO room (num) VALUES
     ('p342'),
     ('m513'),
     ('m423');
