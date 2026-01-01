@@ -59,7 +59,7 @@ def login():
 
         if user:
             login_user(user)
-            return redirect(https://juyceee.pythonanywhere.com/timetable)
+            return redirect(url_for("index"))
 
         error = "Benutzername oder Passwort ist falsch."
 
