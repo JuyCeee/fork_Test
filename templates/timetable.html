@@ -1,16 +1,11 @@
 <style>
   body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0; /* Optional: Damit man die Ränder sieht */
+    padding: 0;
+    overflow: visible; /* Verhindert Scrollbalken, falls das SVG exakt 100vh hoch ist */
   }
-
   svg {
-    /* 1. Verhindert das Abschneiden von Elementen außerhalb der ViewBox */
-    overflow: visible; 
+    /*display: block; /* Entfernt kleine Lücken unterhalb des SVGs */
   }
 </style>
 
