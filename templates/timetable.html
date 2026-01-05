@@ -1,13 +1,27 @@
 <style>
   body {
     margin: 0;
-    padding: 0;
-    overflow: hidden; /* Verhindert Scrollbalken, falls das SVG exakt 100vh hoch ist */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Optional: Damit man die Ränder sieht */
   }
+
   svg {
-    /*display: block; /* Entfernt kleine Lücken unterhalb des SVGs */
+    /* 1. Verhindert das Abschneiden von Elementen außerhalb der ViewBox */
+    overflow: visible; 
+    
+    /* 2. Erzeugt den Puffer zum Browserrand */
+    width: 95%;  
+    height: auto;
+    max-height: 95vh;
+    
+    /* 3. Optional: Falls du Strokes hast, die über den Rand ragen */
+    padding: 20px;
   }
 </style>
+
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <link rel="preconnect" href="https://fonts.googleapis.com">
