@@ -120,8 +120,11 @@
         </g>
         <g transform="matrix(0.543408,0,0,0.543408,2662.323346,1703.612024)">
             <foreignObject x="1052.265" y="80" width="300" height="160">
-                <input type="text" value="1.0" 
-                       style="font-family:'Anton', sans-serif; font-size:125px; fill:rgb(59,79,86); background:transparent; border:none; width:100%;">
+                <input type="number" 
+                     step="0.01" 
+                     value="1.00" 
+                     oninput="this.value = this.value.replace(/(\.\d\d)\d+/, '$1')"
+                     style="font-family:'Anton', sans-serif; font-size:125px; color:rgb(59,79,86); background:transparent; border:none; width:100%;">
             </foreignObject>
         </g>
         
