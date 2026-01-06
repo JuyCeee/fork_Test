@@ -109,19 +109,19 @@
         <g transform="matrix(-1.01921,-0,0,-1.060976,4649.360589,581.68071)">
             <path d="M1422.5,128.506L1422.5,260.585C1422.5,265.28 1418.532,269.091 1413.646,269.091L1322.905,269.091C1292.215,269.091 1267.3,245.156 1267.3,215.675L1267.3,173.416C1267.3,143.935 1292.215,120 1322.905,120L1413.646,120C1418.532,120 1422.5,123.811 1422.5,128.506Z" style="fill:rgb(186,199,205);"/>
         </g>
-        <g class="absence-btn" transform="matrix(-1.01921,-0,0,-1.060976,4021.775741,934.044346)">
+        <g class="absence-btn" data-value="alle" transform="matrix(-1.01921,-0,0,-1.060976,4021.775741,934.044346)">
             <path d="M1366.895,269.091L707.148,269.091C676.459,269.091 651.543,245.156 651.543,215.675L651.543,128.506C651.543,123.811 655.511,120 660.398,120L1413.646,120C1418.532,120 1422.5,123.811 1422.5,128.506L1422.5,215.675C1422.5,245.156 1397.584,269.091 1366.895,269.091Z" style="fill:rgb(186,199,205);"/>
         </g>
-        <g class="absence-btn" transform="matrix(-1.01921,-0,0,-1.060976,4021.809074,1110.458333)">
+        <g class="absence-btn" data-value="offen" transform="matrix(-1.01921,-0,0,-1.060976,4021.809074,1110.458333)">
             <path d="M1413.646,269.091L660.578,269.091C655.691,269.091 651.723,265.28 651.723,260.585L651.723,128.506C651.723,123.811 655.691,120 660.578,120L1413.646,120C1418.532,120 1422.5,123.811 1422.5,128.506L1422.5,260.585C1422.5,265.28 1418.532,269.091 1413.646,269.091Z" style="fill:rgb(115,140,151);"/>
         </g>
-        <g class="absence-btn" transform="matrix(-1.01921,-0,0,-1.060976,4021.809074,1286.87232)">
+        <g class="absence-btn" data-value="entschuldigt" transform="matrix(-1.01921,-0,0,-1.060976,4021.809074,1286.87232)">
             <path d="M1413.646,269.091L660.578,269.091C655.691,269.091 651.723,265.28 651.723,260.585L651.723,128.506C651.723,123.811 655.691,120 660.578,120L1413.646,120C1418.532,120 1422.5,123.811 1422.5,128.506L1422.5,260.585C1422.5,265.28 1418.532,269.091 1413.646,269.091Z" style="fill:rgb(115,140,151);"/>
         </g>
-        <g class="absence-btn" transform="matrix(-1.01921,-0,0,-1.060976,4021.809074,1463.286307)">
+        <g class="absence-btn" data-value="unentschuldigt" transform="matrix(-1.01921,-0,0,-1.060976,4021.809074,1463.286307)">
             <path d="M1413.646,269.091L660.578,269.091C655.691,269.091 651.723,265.28 651.723,260.585L651.723,128.506C651.723,123.811 655.691,120 660.578,120L1413.646,120C1418.532,120 1422.5,123.811 1422.5,128.506L1422.5,260.585C1422.5,265.28 1418.532,269.091 1413.646,269.091Z" style="fill:rgb(115,140,151);"/>
         </g>
-        <g class="absence-btn" transform="matrix(1.01921,0,-0,1.060976,1907.924259,1226.652161)">
+        <g class="absence-btn" data-value="verspätet" transform="matrix(1.01921,0,-0,1.060976,1907.924259,1226.652161)">
             <path d="M660.365,120L1413.466,120C1418.353,120 1422.32,123.811 1422.32,128.506L1422.32,215.675C1422.32,245.156 1397.404,269.091 1366.715,269.091L707.116,269.091C676.426,269.091 651.51,245.156 651.51,215.675L651.51,128.506C651.51,123.811 655.478,120 660.365,120Z" style="fill:rgb(115,140,151);"/>
         </g>
         <g transform="matrix(0.767047,0,0,0.767047,1806.384565,613.370375)">
@@ -165,22 +165,22 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all buttons with our class
     const buttons = document.querySelectorAll('.absence-btn');
+    const hiddenInput = document.getElementById('selected_absence');
 
     buttons.forEach(btn => {
         btn.addEventListener('click', function() {
-            // Option A: Toggle (allows multiple selections)
-            this.classList.toggle('active');
-
-            // Option B: Radio behavior (only one active at a time)
-            /*
+            // 1. Entferne 'active' von ALLEN Buttons (Radio-Logik)
             buttons.forEach(b => b.classList.remove('active'));
+
+            // 2. Füge 'active' nur dem geklickten Button hinzu
             this.classList.add('active');
-            */
-            
-            // Optional: Print which button was clicked for debugging
-            console.log("Button clicked:", this.getAttribute('transform'));
+
+            // 3. Speichere den Wert im versteckten Input-Feld
+            const val = this.getAttribute('data-value');
+            hiddenInput.value = val;
+
+            console.log("Gespeichertes Element:", val);
         });
     });
 });
