@@ -99,7 +99,7 @@ CREATE TABLE special (
     type VARCHAR(100) NOT NULL,
     timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
-
+);
 --Crosstables
     
 CREATE TABLE cross_timetable_class (
