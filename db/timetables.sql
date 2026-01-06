@@ -18,7 +18,7 @@ DROP TABLE cross_timetable_room;
 
 -- We'll have to check if I put the foreign keys in the right tables
 
--- Have to add n-n possibilities for tabled, otherwise should mostly be good
+-- Have to add n-n possibilities for tabled, otherwise should mostly be good -- Done That
 
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY
