@@ -7,7 +7,11 @@ DROP TABLE grade;
 DROP TABLE homework;
 DROP TABLE message;
 DROP TABLE class;
-DROP TABLE timecodes;
+DROP TABLE times;
+DROP TABLE special;
+DROP TABLE cross_timetable_class;
+DROP TABLE cross_timetable_teacher;
+DROP TABLE cross_timetable_room;
 
 -- We could also use INT for a couple of things and just number them through but at the end we'd prolly
 -- have to make more tables. Also it mostly depends on how we recieve the info.
