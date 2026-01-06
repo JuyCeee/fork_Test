@@ -25,14 +25,14 @@ CREATE TABLE teacher (
     name VARCHAR(100) NOT NULL,
     initials VARCHAR(10) NOT NULL,
     timetable_id INT,
-    FOREIGN KEY (timetable_id) REFERENCES timetable(id)
+    FOREIGN KEY (cross_timetable_id) REFERENCES cross_timetable_teacher(teacher_id)
 );
 
 CREATE TABLE room (
     id INT AUTO_INCREMENT PRIMARY KEY,
     num VARCHAR(10) NOT NULL,
     timetable_id INT,
-    FOREIGN KEY (timetable_id) REFERENCES timetable(id)
+    FOREIGN KEY (cross_timetable_id) REFERENCES cross_timetable_room(room_id)
 );
 
 CREATE TABLE absence (
@@ -81,7 +81,7 @@ CREATE TABLE class (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(10) NOT NULL,
     timetable_id INT,
-    FOREIGN KEY (timetable_id) REFERENCES timetable(id)
+    FOREIGN KEY (cross_timetable_id) REFERENCES cross_timetable_class(timetable_id)
 );
 
 CREATE TABLE times (
@@ -96,6 +96,23 @@ CREATE TABLE special (
     timetable_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id)
 
+--Crosstables
+    
+CREATE TABLE cross_timetable_class (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY (timetable_id) REFERENCES timetable(id)
+    FOREIGN KEY (class_id) REFERENCES class(id)
+);
+CREATE TABLE cross_timetable_teacher (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY (timetable_id) REFERENCES timetable(id)
+    FOREIGN KEY (teacher_id) REFERENCES teacher(id)
+);
+CREATE TABLE cross_timetable_room (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY (timetable_id) REFERENCES timetable(id)
+    FOREIGN KEY (room_id) REFERENCES room(id)
+);
 
 --Temp Testdata
 
