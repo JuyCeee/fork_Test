@@ -118,9 +118,9 @@ INSERT INTO absence (type, status) VALUES
     ('Abwesend', 'Entschuldigt');
 
 INSERT INTO subject (name, shortened, colour) VALUES
-    ('Physik', 'Ph', '143, 21, 30'),
-    ('Deutsch', 'D', '143, 21, 30'),
-    ('Mathematik', 'M', '143, 21, 30');
+    ('Physik', 'Ph', '143,21,30'),
+    ('Deutsch', 'D', '143,21,30'),
+    ('Mathematik', 'M', '143,21,30');
 
 INSERT INTO grade (mark, weight) VALUES
     (4.5, 1),
