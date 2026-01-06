@@ -333,4 +333,50 @@
             <text x="1052.265px" y="198.679px" style="font-family:'Anton-Regular', 'Anton';font-size:125px;">30.12.2026</text>
         </g>
     </g>
+    <g id="date-navigation" transform="translate(3000, 150)">
+        <g id="prevWeek" style="cursor:pointer;" onclick="changeWeek(-1)">
+            <rect x="0" y="0" width="100" height="100" rx="10" fill="#ba7c7d" />
+            <text x="50" y="70" font-family="Anton" font-size="60" text-anchor="middle" fill="white"><</text>
+        </g>
+
+        <text id="currentDateDisplay" x="400" y="75" font-family="Anton" font-size="80" fill="#738c97" text-anchor="middle">
+            DD.MM.YYYY
+        </text>
+
+        <g id="nextWeek" transform="translate(700,0)" style="cursor:pointer;" onclick="changeWeek(1)">
+            <rect x="0" y="0" width="100" height="100" rx="10" fill="#738c97" />
+            <text x="50" y="70" font-family="Anton" font-size="60" text-anchor="middle" fill="white">></text>
+        </g>
+    </g>
 </svg>
+
+<script>
+    let currentMonday = new Date();
+
+    // Funktion um den Montag der aktuellen Woche zu finden
+    function getMonday(d) {
+        d = new Date(d);
+        let day = d.getDay(),
+            diff = d.getDate() - day + (day == 0 ? -6 : 1); // Passt Sonntag an
+        return new Date(d.setDate(diff));
+    }
+
+    // Initialisierung
+    currentMonday = getMonday(new Date());
+
+    function updateDisplay() {
+        const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        document.getElementById('currentDateDisplay').textContent = 
+            currentMonday.toLocaleDateString('de-DE', options);
+    }
+
+    function changeWeek(weeks) {
+        currentMonday.setDate(currentMonday.getDate() + (weeks * 7));
+        updateDisplay();
+        // Hier könntest du eine Funktion aufrufen, die deine Daten für die neue Woche lädt
+        console.log("Neue Woche ab:", currentMonday);
+    }
+
+    // Beim Laden anzeigen
+    updateDisplay();
+</script>
