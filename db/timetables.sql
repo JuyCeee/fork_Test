@@ -24,7 +24,8 @@ CREATE TABLE timetable (
     grade_id INT,
     homework_id INT,
     message_id INT,
-    times_id INT NOT NULL,
+    start_time INT NOT NULL,
+    end_time INT NOT NULL,
     special_id INT,
     FOREIGN KEY (absence_id) REFERENCES absence(id)
     FOREIGN KEY (subject_id) REFERENCES subject(id)
@@ -119,53 +120,75 @@ CREATE TABLE cross_timetable_room (
 --INSERT INTO timetable () VALUES
 
 INSERT INTO teacher (name, initials) VALUES
-    ('Martin Lieberherr', 'LiM'),
-    ('Marcel Naef', 'NaM'),
-    ('Riccardo Ferrario', 'FeR');
+    ('Naef Marcel', 'NaM'),
+    ('Möckli Nicola', 'MoN'),
+    ('Ferrario Riccardo', 'FeR'),
+    ('Weber Schneider Barbara', 'WeB'),
+    ('Fuchs Matthias', 'FuM'),
+    ('Biron Laura', 'BiL');
 
 
 INSERT INTO room (num) VALUES
-    ('p342'),
     ('m513'),
-    ('m423');
+    ('m503'),
+    ('m423'),
+    ('b326'),
+    ('m401'),
+    ('m501');
 
-INSERT INTO absence (type, status) VALUES
-    ('Verspätung', 'Entschuldigt'),
-    ('Verspätung', 'Unentschuldigt'),
-    ('Abwesend', 'Entschuldigt');
-
-INSERT INTO subject (name, shortened, colour) VALUES
-    ('Physik', 'Ph', '143,21,30'),
-    ('Deutsch', 'D', '143,21,30'),
-    ('Mathematik', 'M', '143,21,30');
-
-INSERT INTO grade (mark, weight) VALUES
-    (4.5, 1),
-    (6, 1),
-    (3.25, 2);
+INSERT INTO subject (name, shortened) VALUES
+    ('Deutsch', 'D'),
+    ('Geographie', 'GG'),
+    ('Mathematik', 'M'),
+    ('Anwendungen der Mathematik', 'AM'),
+    ('Biologie', 'B'),
+    ('Geschichte', 'G'),
+    ('Französisch', 'F');
 
 INSERT INTO homework (txt, file, title) VALUES
     ('Lesen S.20-21', false, 'Geschichte HA'),
-    ('Aufgabe 34 a), b) und c)', true, 'Mathematik Aufgaben'),
-    ('', false, 'Auftrag 3 lösen');
 
 INSERT INTO message (message) VALUES
-    ('Máté Levente Papp wird umgebracht'),
-    ('Lektion verschoben ins Zimmer 422'),
-    ('Louis ist tot');
+    ('WB "Kollaborative Unterrichtsgestaltung", Zi 525a/b'),
 
 INSERT INTO class (name) VALUES
     ('3h'),
-    ('3g'),
-    ('2h');
-
-INSERT INTO times (time) VALUES
-    (1766150400)
-    (1766153700)
-    (1766157000)
-
 
 INSERT INTO special (type) VALUES
-    ('Ausfall')
-    ('Wintersporttag')
-    ('Ausfall')
+     ('Ausfall')
+
+INSERT INTO cross_timetable_room (room_id, timetable_id) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7);
+
+INSERT INTO cross_timetable_class (class_id, timetable_id) VALUES
+    (1, 1),
+    (1, 2),
+    (1, 3),
+    (1, 4),
+    (1, 5),
+    (1, 6),
+    (1, 7);
+
+INSERT INTO cross_timetable_teacher (teacher_id, timetable_id) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7);   
+
+INSERT INTO timetable (subject_id, start_time, end_time, homework_id, message_id, special_id)
+    (1, 1767595500000, 1767598200000, NULL, NULL, NULL ),
+    (2, 1767598800000, 1767601500000, NULL, NULL, NULL ),
+    (3, 1767602100000, 1767604800000, NULL, NULL, NULL ),
+    (4, 1767605700000, 1767608400000, NULL, NULL, NULL ),
+    (5, 1767609000000, 1767611700000, NULL, NULL, NULL ),
+    (6, 1767615600000, 1767618300000, 1, NULL, NULL ),
+    (7, 1767618900000, 1767621600000, NULL, 1, 1 );
