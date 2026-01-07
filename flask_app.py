@@ -144,7 +144,7 @@ def timetable():
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
-def index():
+def timetable():
     # GET
     if request.method == "GET":
         todos = db_read("SELECT id, content, due FROM todos WHERE user_id=%s ORDER BY due", (current_user.id,))
