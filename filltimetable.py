@@ -3,7 +3,8 @@ import mysql.connector
 import re
 from db import get_conn
 import os
-
+from ajax import login_to_tam, get_timetable_from_tam
+import auth
 #Checks if a value already exists in a table
 
 def check_if_already_there(conn, table, attribute, value):
