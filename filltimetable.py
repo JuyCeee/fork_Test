@@ -1,7 +1,7 @@
 import json
 import mysql.connector
 import re
-import db
+from db import get_conn
 
 #Checks if a value already exists in a table
 
