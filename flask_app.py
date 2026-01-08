@@ -182,10 +182,9 @@ def complete():
     
 @app.route("/filltimetable", methods=["GET"])
 @login_required
-
 def filltimetable():
     filltimetable.Upsert_db();
-    timetable()
+    timetable();
     
 if __name__ == "__main__":
     app.run()
