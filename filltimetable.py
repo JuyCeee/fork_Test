@@ -5,6 +5,7 @@ from db import get_conn
 import os
 from ajax import login_to_tam, get_timetable_from_tam
 import auth
+from flask_login import current_user
 #Checks if a value already exists in a table
 
 def check_if_already_there(conn, table, attribute, value):
@@ -193,13 +194,23 @@ def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectna
 #Final function that updates the data base
 
 def upsert_db():
-    conn = get_conn()
+    user = current_user()
+    
+    session, csrf_token = login_to_tam(user.username, user.getplainpass(), 'krm')
+
+    json = get_timetable_from_tam(session)
+    data =json.load(json)
+    """
     base_dir = os.path.dirname(os.path.abspath(__file__))
     json_path = os.path.join(base_dir, "intranet.json")
     with open(json_path, "r") as f:
         data = json.load(f)
+    """
+    
     data = data["data"]
     lenData = len(data)
+
+    conn = get_conn()
     for i in range(lenData):
         teachername = data[i]["teacherFullName"]
         teacherinitials = data[i]["teacherAcronym"]
