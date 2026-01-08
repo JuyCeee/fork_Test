@@ -160,12 +160,11 @@ def timetable():
     LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
     ORDER BY t.start_time
     """
-    lesson = db_read(query, ())
+    timetable = db_read(query, ())
     
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
     # Hier übergeben wir die Rohdaten an das Template
-    timetable = db_read("SELECT username FROM users ORDER BY username", ())
-    return render_template("timetable.html", lesson=timetable)
+    return render_template("timetable.html", timetable=timetable)
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
