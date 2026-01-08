@@ -182,7 +182,7 @@ def complete():
     
 @app.route("/filltimetable", methods=["GET"])
 @login_required
-def filltimetable():
+def filltimetable_route():
     upsert_db();
     timetable();
     
