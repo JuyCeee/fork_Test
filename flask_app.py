@@ -140,42 +140,8 @@ def overview():
 @app.route("/timetable", methods=["GET"])
 @login_required
 def timetable():
-    # SQL Query, um alle Tabellen zu verknüpfen
-    query = """
-        SELECT 
-            t.id, t.start_time, t.end_time, 
-            s.shortened AS subject, 
-            tea.initials AS teacher, 
-            r.num AS room, 
-            h.txt AS homework, 
-            m.message, 
-            spec.type AS special
-        FROM timetable t
-        JOIN subject s ON t.subject_id = s.id
-        JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
-        JOIN teacher tea ON ctt.teacher_id = tea.id
-        JOIN cross_timetable_room ctr ON t.id = ctr.timetable_id
-        JOIN room r ON ctr.room_id = r.id
-        LEFT JOIN homework h ON t.homework_id = h.id
-        LEFT JOIN message m ON t.message_id = m.id
-        LEFT JOIN special spec ON t.special_id = spec.id
-        ORDER BY t.start_time ASC
-    """
-    
-    raw_data = db_read(query, ())
-    
-    # Daten für das Template aufbereiten (Timestamps zu Uhrzeit)
-    lessons = []
-    for row in raw_data:
-        # Falls db_read Listen/Tuples zurückgibt, hier Mapping auf Dict
-        # (Annahme: db_read nutzt cursor.fetchall() mit Row-Factory)
-        lesson = dict(row)
-        # Umwandlung: Millisekunden (aus SQL) -> Sekunden -> Uhrzeit-String
-        lesson['start_readable'] = datetime.fromtimestamp(lesson['start_time']/1000).strftime('%H:%M')
-        lesson['end_readable'] = datetime.fromtimestamp(lesson['end_time']/1000).strftime('%H:%M')
-        lessons.append(lesson)
-
-    return render_template("timetable.html", lessons=lessons)
+    timetable = db_read("SELECT username FROM users ORDER BY username", ())
+    return render_template("timetable.html", timetable=timetable)
 
 
 @app.route("/", methods=["GET", "POST"])
