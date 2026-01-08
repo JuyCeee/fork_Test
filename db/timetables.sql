@@ -1,21 +1,19 @@
-DROP TABLE timetable;
-DROP TABLE teacher;
-DROP TABLE room;
-DROP TABLE absence;
-DROP TABLE subject;
-DROP TABLE grade;
-DROP TABLE homework;
-DROP TABLE message;
-DROP TABLE class;
-DROP TABLE times;
-DROP TABLE special;
-DROP TABLE cross_timetable_class;
-DROP TABLE cross_timetable_teacher;
 DROP TABLE cross_timetable_room;
+DROP TABLE cross_timetable_teacher;
+DROP TABLE cross_timetable_teacher;
+DROP TABLE timetable;
+DROP TABLE special;
+DROP TABLE class_;
+DROP TABLE message;
+DROP TABLE homework;
+DROP TABLE subject;
+DROP TABLE room;
+DROP TABLE teacher;
 
 -- We could also use INT for a couple of things and just number them through but at the end we'd prolly
 -- Times table maybe unneccesary cuz does not save anything, have to look into that, maybe just normally save it in timetable
 -- Problem with grade and absences in how we currently do it, we do not have the student, only works in app not website
+
 CREATE TABLE teacher (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
