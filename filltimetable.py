@@ -192,7 +192,7 @@ def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectna
 
 def upsert_db():
     conn = get_conn()
-    with open("Intranet.json", "r") as f:
+    with open("intranet.json", "r") as f:
         data = json.load(f)
     data = data["data"]
     lenData = len(data)
