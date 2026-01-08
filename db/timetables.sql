@@ -1,6 +1,6 @@
 DROP TABLE cross_timetable_room;
 DROP TABLE cross_timetable_teacher;
-DROP TABLE cross_timetable_teacher;
+DROP TABLE cross_timetable_class;
 DROP TABLE timetable;
 DROP TABLE special;
 DROP TABLE class_;
