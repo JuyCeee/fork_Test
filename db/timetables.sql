@@ -16,6 +16,16 @@ DROP TABLE cross_timetable_room;
 -- We could also use INT for a couple of things and just number them through but at the end we'd prolly
 -- Times table maybe unneccesary cuz does not save anything, have to look into that, maybe just normally save it in timetable
 -- Problem with grade and absences in how we currently do it, we do not have the student, only works in app not website
+CREATE TABLE teacher (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    initials VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE room (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    num VARCHAR(10) NOT NULL
+);
 
 CREATE TABLE subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
