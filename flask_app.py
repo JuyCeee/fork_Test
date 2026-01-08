@@ -9,7 +9,7 @@ from db import db_read, db_write
 from auth import login_manager, authenticate, register_user
 from flask_login import login_user, logout_user, login_required, current_user
 import logging
-import filltimetable
+from filltimetable import upsert_db
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -183,7 +183,7 @@ def complete():
 @app.route("/filltimetable", methods=["GET"])
 @login_required
 def filltimetable():
-    filltimetable.Upsert_db();
+    filltimetable.upsert_db();
     timetable();
     
 if __name__ == "__main__":
