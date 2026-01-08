@@ -1,0 +1,3723 @@
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 2109111,
+            "timetableElementId": 205793,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 205793,
+            "periodId": 83,
+            "start": "\/Date(1767954600000.000000)\/",
+            "end": "\/Date(1767957300000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "11:30:00",
+            "lessonEnd": "12:15:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": "0",
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 12,
+            "timetableEntryType": "substitution",
+            "timetableEntryTypeLong": "block substitution",
+            "timetableEntryTypeShort": "block",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Infoveranstaltung Maturarbeit, Aula",
+            "halfClassLesson": "0",
+            "courseId": 0,
+            "courseName": null,
+            "course": null,
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 0,
+            "subjectName": null,
+            "timegridId": 0,
+            "classId": [
+                2019,
+                2020,
+                2043,
+                2044,
+                2045,
+                2046,
+                2047,
+                2048,
+                2049,
+                2050
+            ],
+            "className": "4p, 4q, 3a, 3b, 3c, 3d, 3e, 3f, 3g, 3h",
+            "profileId": "75, 81, 45, 45, 45, 45, 45, 45, 45, 45",
+            "teamId": "",
+            "teacherId": [
+                4001563,
+                4001603,
+                4001735,
+                4004664,
+                4006152,
+                4007791,
+                4014447,
+                4016481,
+                4017054,
+                4017057
+            ],
+            "teacherAcronym": "LiM,GiP,ScV,BMo,FiE,HaM,NaU,SuN,ZbL,RuR",
+            "teacherFullName": [
+                "Lieberherr Martin",
+                "Gilardi Pietro",
+                "Sch\u00f6nherr Valentin",
+                "B\u00e4r Mons",
+                "Fitze Eric",
+                "H\u00e4feli Mario",
+                "N\u00e4f Ursula",
+                "Suter Nina",
+                "Zbinden Lina",
+                "R\u00fcdiger Rafael"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016491,
+                    "studentName": "Angelov, Oleksandr"
+                },
+                {
+                    "studentId": 4017071,
+                    "studentName": "Babiy, Vladyslav"
+                },
+                {
+                    "studentId": 4016504,
+                    "studentName": "Betschart, Fionn"
+                },
+                {
+                    "studentId": 4015423,
+                    "studentName": "Branson, Benjamin"
+                },
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                },
+                {
+                    "studentId": 4016537,
+                    "studentName": "Cs\u00e1sz\u00e1r, Barnab\u00e1s"
+                },
+                {
+                    "studentId": 4016560,
+                    "studentName": "Ducret, Timofei"
+                },
+                {
+                    "studentId": 4016574,
+                    "studentName": "Feng, Benjamin"
+                },
+                {
+                    "studentId": 4017737,
+                    "studentName": "Gaschen, Alexandre"
+                },
+                {
+                    "studentId": 4016615,
+                    "studentName": "H\u00e4nseler, Malik Fabian"
+                },
+                {
+                    "studentId": 4001563,
+                    "studentName": "Lieberherr, Martin"
+                },
+                {
+                    "studentId": 4001711,
+                    "studentName": "Mikol\u00e1\u0161kov\u00e1, Adriana"
+                },
+                {
+                    "studentId": 4016700,
+                    "studentName": "Papp, M\u00e1t\u00e9 Levente"
+                },
+                {
+                    "studentId": 4017030,
+                    "studentName": "Petrovic, Djuradj"
+                },
+                {
+                    "studentId": 4016722,
+                    "studentName": "Przydatek, Misha"
+                },
+                {
+                    "studentId": 4016739,
+                    "studentName": "Rijk, Maximilian"
+                },
+                {
+                    "studentId": 4016744,
+                    "studentName": "Rossi, Leonardo"
+                },
+                {
+                    "studentId": 4016742,
+                    "studentName": "R\u00f6hr Berrozpe, Oscar"
+                },
+                {
+                    "studentId": 4016775,
+                    "studentName": "Schnidrig, Louis"
+                },
+                {
+                    "studentId": 4016225,
+                    "studentName": "Sch\u00e4r, Gabriel"
+                },
+                {
+                    "studentId": 4016802,
+                    "studentName": "Sternicki, Maciej"
+                },
+                {
+                    "studentId": 4016808,
+                    "studentName": "Struve, Joris"
+                },
+                {
+                    "studentId": 4016289,
+                    "studentName": "Walgis, Eliot Tim"
+                },
+                {
+                    "studentId": 4016851,
+                    "studentName": "Zingraff, Oscar"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [],
+            "roomName": "",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001563",
+                "pe_4001603",
+                "pe_4001735",
+                "pe_4004664",
+                "pe_4006152",
+                "pe_4007791",
+                "pe_4014447",
+                "pe_4016481",
+                "pe_4017054",
+                "pe_4017057",
+                "pe_4001563",
+                "pe_4001711",
+                "pe_4015423",
+                "pe_4016225",
+                "pe_4016289",
+                "pe_4016491",
+                "pe_4016504",
+                "pe_4016519",
+                "pe_4016537",
+                "pe_4016560",
+                "pe_4016574",
+                "pe_4016615",
+                "pe_4016700",
+                "pe_4016722",
+                "pe_4016739",
+                "pe_4016742",
+                "pe_4016744",
+                "pe_4016775",
+                "pe_4016802",
+                "pe_4016808",
+                "pe_4016851",
+                "pe_4017030",
+                "pe_4017071",
+                "pe_4017737",
+                "cl_2019",
+                "cl_2020",
+                "cl_2043",
+                "cl_2044",
+                "cl_2045",
+                "cl_2046",
+                "cl_2047",
+                "cl_2048",
+                "cl_2049",
+                "cl_2050"
+            ]
+        },
+        {
+            "id": 2092890,
+            "timetableElementId": 42386,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767795000000.000000)\/",
+            "end": "\/Date(1767797700000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "15:10:00",
+            "lessonEnd": "15:55:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Mu",
+            "halfClassLesson": null,
+            "courseId": 42782,
+            "courseName": "Mu",
+            "course": "Musik, GF DjTn (3a \/3b \/3c \/3d \/3e \/3f \/3g \/3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 19,
+            "subjectName": "Musik",
+            "timegridId": 47,
+            "classId": [
+                2043,
+                2044,
+                2045,
+                2046,
+                2047,
+                2048,
+                2049,
+                2050
+            ],
+            "className": "3a, 3b, 3c, 3d, 3e, 3f, 3g, 3h",
+            "profileId": "45, 45, 45, 45, 45, 45, 45, 45",
+            "teamId": "",
+            "teacherId": [
+                4009566
+            ],
+            "teacherAcronym": "MSe",
+            "teacherFullName": [
+                "M\u00fcller-Ammann Sebastian"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                21
+            ],
+            "roomName": "m304",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4009566",
+                "pe_4016519",
+                "cl_2043",
+                "cl_2044",
+                "cl_2045",
+                "cl_2046",
+                "cl_2047",
+                "cl_2048",
+                "cl_2049",
+                "cl_2050",
+                "lo_21",
+                "co_42782"
+            ]
+        },
+        {
+            "id": 2068908,
+            "timetableElementId": 41745,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767595500000.000000)\/",
+            "end": "\/Date(1767598200000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "07:45:00",
+            "lessonEnd": "08:30:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "D",
+            "halfClassLesson": null,
+            "courseId": 42925,
+            "courseName": "D",
+            "course": "Deutsch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 0,
+            "subjectId": 1,
+            "subjectName": "Deutsch",
+            "timegridId": 17,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017638
+            ],
+            "teacherAcronym": "NaM",
+            "teacherFullName": [
+                "Naef Marcel"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                45
+            ],
+            "roomName": "m513",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017638",
+                "pe_4016519",
+                "cl_2050",
+                "lo_45",
+                "co_42925"
+            ]
+        },
+        {
+            "id": 2069345,
+            "timetableElementId": 41751,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767598800000.000000)\/",
+            "end": "\/Date(1767601500000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "08:40:00",
+            "lessonEnd": "09:25:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Gg",
+            "halfClassLesson": null,
+            "courseId": 42928,
+            "courseName": "Gg",
+            "course": "Geographie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 0,
+            "subjectId": 14,
+            "subjectName": "Geographie",
+            "timegridId": 18,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017759
+            ],
+            "teacherAcronym": "MoN",
+            "teacherFullName": [
+                "M\u00f6ckli Nicola"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                41
+            ],
+            "roomName": "m503",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017759",
+                "pe_4016519",
+                "cl_2050",
+                "lo_41",
+                "co_42928"
+            ]
+        },
+        {
+            "id": 2069000,
+            "timetableElementId": 41746,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767602100000.000000)\/",
+            "end": "\/Date(1767604800000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "09:35:00",
+            "lessonEnd": "10:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "M",
+            "halfClassLesson": null,
+            "courseId": 42933,
+            "courseName": "M",
+            "course": "Mathematik, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 0,
+            "subjectId": 9,
+            "subjectName": "Mathematik",
+            "timegridId": 19,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4015124
+            ],
+            "teacherAcronym": "FeR",
+            "teacherFullName": [
+                "Ferrario Riccardo"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                36
+            ],
+            "roomName": "m423",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4015124",
+                "pe_4016519",
+                "cl_2050",
+                "lo_36",
+                "co_42933"
+            ]
+        },
+        {
+            "id": 2069092,
+            "timetableElementId": 41747,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767605700000.000000)\/",
+            "end": "\/Date(1767608400000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "10:35:00",
+            "lessonEnd": "11:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "AM",
+            "halfClassLesson": null,
+            "courseId": 42960,
+            "courseName": "AM",
+            "course": "Anwendungen der Mathematik, SP DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 0,
+            "subjectId": 10,
+            "subjectName": "Anwendungen der Mathematik",
+            "timegridId": 20,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4015124
+            ],
+            "teacherAcronym": "FeR",
+            "teacherFullName": [
+                "Ferrario Riccardo"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                36
+            ],
+            "roomName": "m423",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4015124",
+                "pe_4016519",
+                "cl_2050",
+                "lo_36",
+                "co_42960"
+            ]
+        },
+        {
+            "id": 2068701,
+            "timetableElementId": 41741,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767609000000.000000)\/",
+            "end": "\/Date(1767611700000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "11:30:00",
+            "lessonEnd": "12:15:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "B",
+            "halfClassLesson": null,
+            "courseId": 42927,
+            "courseName": "B",
+            "course": "Biologie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 13,
+            "subjectName": "Biologie",
+            "timegridId": 21,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001646
+            ],
+            "teacherAcronym": "WeB",
+            "teacherFullName": [
+                "Weber Schneider Barbara"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                3
+            ],
+            "roomName": "b326",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001646",
+                "pe_4016519",
+                "cl_2050",
+                "lo_3",
+                "co_42927"
+            ]
+        },
+        {
+            "id": 2069207,
+            "timetableElementId": 41749,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767615600000.000000)\/",
+            "end": "\/Date(1767618300000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "13:20:00",
+            "lessonEnd": "14:05:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "G",
+            "halfClassLesson": null,
+            "courseId": 42930,
+            "courseName": "G",
+            "course": "Geschichte, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 0,
+            "subjectId": 15,
+            "subjectName": "Geschichte",
+            "timegridId": 23,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4002421
+            ],
+            "teacherAcronym": "FuM",
+            "teacherFullName": [
+                "Fuchs Matthias"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                22
+            ],
+            "roomName": "m401",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4002421",
+                "pe_4016519",
+                "cl_2050",
+                "lo_22",
+                "co_42930"
+            ]
+        },
+        {
+            "id": 2122075,
+            "timetableElementId": 212087,
+            "holidayId": 0,
+            "blockId": [
+                212019
+            ],
+            "blockTeacherId": [
+                4001540,
+                4001555,
+                4001589,
+                4001600,
+                4001733,
+                4004662,
+                4006959,
+                4007751,
+                4007771,
+                4007791,
+                4010688,
+                4011604,
+                4011613,
+                4012746,
+                4013831,
+                4013873,
+                4015799,
+                4015846,
+                4016481,
+                4017054,
+                4017057,
+                4017761
+            ],
+            "blockClassId": [
+                0
+            ],
+            "blockRoomId": [
+                0
+            ],
+            "modId": 212087,
+            "periodId": 83,
+            "start": "\/Date(1767618900000.000000)\/",
+            "end": "\/Date(1767621600000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "14:15:00",
+            "lessonEnd": "15:00:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": "1",
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 11,
+            "timetableEntryType": "substitution",
+            "timetableEntryTypeLong": "canceled lesson",
+            "timetableEntryTypeShort": "cancel",
+            "messageId": 196700,
+            "message": "WB \"Kollaborative Unterrichtsgestaltung\", Zi 525a\/b",
+            "output": "",
+            "title": "F",
+            "halfClassLesson": "0",
+            "courseId": 42931,
+            "courseName": "F",
+            "course": "Franz\u00f6sisch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 2,
+            "subjectName": "Franz\u00f6sisch",
+            "timegridId": 0,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017761
+            ],
+            "teacherAcronym": "BiL",
+            "teacherFullName": [
+                "Biron Laura"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                39
+            ],
+            "roomName": "m501",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017761",
+                "pe_4016519",
+                "cl_2050",
+                "lo_39",
+                "co_42931"
+            ]
+        },
+        {
+            "id": 2117164,
+            "timetableElementId": 42914,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767622200000.000000)\/",
+            "end": "\/Date(1767623520000.000000)\/",
+            "lessonDate": "2026-01-05",
+            "lessonStart": "15:10:00",
+            "lessonEnd": "15:32:00",
+            "examModification": 0,
+            "lessonDuration": "00:22:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 18,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "instrumental definitive",
+            "timetableEntryTypeShort": "iudefinitive",
+            "messageId": 195351,
+            "message": "15.15",
+            "output": "",
+            "title": "IU",
+            "halfClassLesson": null,
+            "courseId": 42871,
+            "courseName": "In",
+            "course": "Instrument, GF DnTn (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 21,
+            "subjectName": "Instrument",
+            "timegridId": 0,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001682
+            ],
+            "teacherAcronym": "PeF",
+            "teacherFullName": [
+                "Perret Felix"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "Brunner Kai, 3h",
+            "studentLastname": "Brunner",
+            "studentFirstname": "Kai",
+            "roomId": [],
+            "roomName": "",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001682",
+                "pe_4016519",
+                "cl_2050",
+                "co_42871"
+            ]
+        },
+        {
+            "id": 2081719,
+            "timetableElementId": 42097,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767681900000.000000)\/",
+            "end": "\/Date(1767684600000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "07:45:00",
+            "lessonEnd": "08:30:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "F",
+            "halfClassLesson": null,
+            "courseId": 42931,
+            "courseName": "F",
+            "course": "Franz\u00f6sisch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 0,
+            "subjectId": 2,
+            "subjectName": "Franz\u00f6sisch",
+            "timegridId": 28,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017761
+            ],
+            "teacherAcronym": "BiL",
+            "teacherFullName": [
+                "Biron Laura"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                46
+            ],
+            "roomName": "m514",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017761",
+                "pe_4016519",
+                "cl_2050",
+                "lo_46",
+                "co_42931"
+            ]
+        },
+        {
+            "id": 2098467,
+            "timetableElementId": 42541,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767685200000.000000)\/",
+            "end": "\/Date(1767687900000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "08:40:00",
+            "lessonEnd": "09:25:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "SpK",
+            "halfClassLesson": null,
+            "courseId": 42929,
+            "courseName": "Sp",
+            "course": "Sport, GF DnTn (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 23,
+            "subjectName": "Sport",
+            "timegridId": 29,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001592
+            ],
+            "teacherAcronym": "EbW",
+            "teacherFullName": [
+                "Ebner Wolfgang"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                70
+            ],
+            "roomName": "TA",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001592",
+                "pe_4016519",
+                "cl_2050",
+                "lo_70",
+                "co_42929"
+            ]
+        },
+        {
+            "id": 2069138,
+            "timetableElementId": 41748,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767688500000.000000)\/",
+            "end": "\/Date(1767691200000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "09:35:00",
+            "lessonEnd": "10:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Ph",
+            "halfClassLesson": null,
+            "courseId": 42961,
+            "courseName": "P",
+            "course": "Physik, SP DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 11,
+            "subjectName": "Physik",
+            "timegridId": 30,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001563
+            ],
+            "teacherAcronym": "LiM",
+            "teacherFullName": [
+                "Lieberherr Martin"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                67
+            ],
+            "roomName": "p342",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001563",
+                "pe_4016519",
+                "cl_2050",
+                "lo_67",
+                "co_42961"
+            ]
+        },
+        {
+            "id": 2068931,
+            "timetableElementId": 41745,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767692100000.000000)\/",
+            "end": "\/Date(1767694800000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "10:35:00",
+            "lessonEnd": "11:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "D",
+            "halfClassLesson": null,
+            "courseId": 42925,
+            "courseName": "D",
+            "course": "Deutsch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": true,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 1,
+            "subjectName": "Deutsch",
+            "timegridId": 31,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017638
+            ],
+            "teacherAcronym": "NaM",
+            "teacherFullName": [
+                "Naef Marcel"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                32
+            ],
+            "roomName": "m419",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 16517,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": true,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017638",
+                "pe_4016519",
+                "cl_2050",
+                "lo_32",
+                "co_42925"
+            ]
+        },
+        {
+            "id": 2068954,
+            "timetableElementId": 41745,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767695400000.000000)\/",
+            "end": "\/Date(1767698100000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "11:30:00",
+            "lessonEnd": "12:15:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "D",
+            "halfClassLesson": null,
+            "courseId": 42925,
+            "courseName": "D",
+            "course": "Deutsch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": true,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 1,
+            "subjectName": "Deutsch",
+            "timegridId": 32,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017638
+            ],
+            "teacherAcronym": "NaM",
+            "teacherFullName": [
+                "Naef Marcel"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                32
+            ],
+            "roomName": "m419",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 16518,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": true,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017638",
+                "pe_4016519",
+                "cl_2050",
+                "lo_32",
+                "co_42925"
+            ]
+        },
+        {
+            "id": 2069023,
+            "timetableElementId": 41746,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767702000000.000000)\/",
+            "end": "\/Date(1767704700000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "13:20:00",
+            "lessonEnd": "14:05:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "M",
+            "halfClassLesson": null,
+            "courseId": 42933,
+            "courseName": "M",
+            "course": "Mathematik, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 9,
+            "subjectName": "Mathematik",
+            "timegridId": 34,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4015124
+            ],
+            "teacherAcronym": "FeR",
+            "teacherFullName": [
+                "Ferrario Riccardo"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                51
+            ],
+            "roomName": "m520",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4015124",
+                "pe_4016519",
+                "cl_2050",
+                "lo_51",
+                "co_42933"
+            ]
+        },
+        {
+            "id": 2069046,
+            "timetableElementId": 41746,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767705300000.000000)\/",
+            "end": "\/Date(1767708000000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "14:15:00",
+            "lessonEnd": "15:00:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "M",
+            "halfClassLesson": null,
+            "courseId": 42933,
+            "courseName": "M",
+            "course": "Mathematik, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 9,
+            "subjectName": "Mathematik",
+            "timegridId": 35,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4015124
+            ],
+            "teacherAcronym": "FeR",
+            "teacherFullName": [
+                "Ferrario Riccardo"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                51
+            ],
+            "roomName": "m520",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4015124",
+                "pe_4016519",
+                "cl_2050",
+                "lo_51",
+                "co_42933"
+            ]
+        },
+        {
+            "id": 2086950,
+            "timetableElementId": 42242,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767708600000.000000)\/",
+            "end": "\/Date(1767711300000.000000)\/",
+            "lessonDate": "2026-01-06",
+            "lessonStart": "15:10:00",
+            "lessonEnd": "15:55:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "C",
+            "halfClassLesson": null,
+            "courseId": 42935,
+            "courseName": "Ch",
+            "course": "Chemie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": true,
+            "lessonAbsenceCount": 1,
+            "subjectId": 12,
+            "subjectName": "Chemie",
+            "timegridId": 36,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001535
+            ],
+            "teacherAcronym": "AmC",
+            "teacherFullName": [
+                "Ammann Christian"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                15
+            ],
+            "roomName": "c416",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001535",
+                "pe_4016519",
+                "cl_2050",
+                "lo_15",
+                "co_42935"
+            ]
+        },
+        {
+            "id": 2120346,
+            "timetableElementId": 211026,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 211026,
+            "periodId": 83,
+            "start": "\/Date(1767768300000.000000)\/",
+            "end": "\/Date(1767771000000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "07:45:00",
+            "lessonEnd": "08:30:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": "12",
+            "connectedId": "2080523",
+            "isAllDay": 0,
+            "timetableEntryTypeId": 8,
+            "timetableEntryType": "substitution",
+            "timetableEntryTypeLong": "room changed",
+            "timetableEntryTypeShort": "rmchg",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Inf",
+            "halfClassLesson": "0",
+            "courseId": 42965,
+            "courseName": "If",
+            "course": "Informatik, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 24,
+            "subjectName": "Informatik",
+            "timegridId": 0,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017698
+            ],
+            "teacherAcronym": "BiR",
+            "teacherFullName": [
+                "Bischofberger Roland"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                35
+            ],
+            "roomName": "m422",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017698",
+                "pe_4016519",
+                "cl_2050",
+                "lo_35",
+                "co_42965"
+            ]
+        },
+        {
+            "id": 2069161,
+            "timetableElementId": 41748,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767771600000.000000)\/",
+            "end": "\/Date(1767774300000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "08:40:00",
+            "lessonEnd": "09:25:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Ph",
+            "halfClassLesson": null,
+            "courseId": 42961,
+            "courseName": "P",
+            "course": "Physik, SP DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 11,
+            "subjectName": "Physik",
+            "timegridId": 40,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001563
+            ],
+            "teacherAcronym": "LiM",
+            "teacherFullName": [
+                "Lieberherr Martin"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                67
+            ],
+            "roomName": "p342",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 18452,
+            "hasHomework": true,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001563",
+                "pe_4016519",
+                "cl_2050",
+                "lo_67",
+                "co_42961"
+            ]
+        },
+        {
+            "id": 2069115,
+            "timetableElementId": 41747,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767774900000.000000)\/",
+            "end": "\/Date(1767777600000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "09:35:00",
+            "lessonEnd": "10:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "AM",
+            "halfClassLesson": null,
+            "courseId": 42960,
+            "courseName": "AM",
+            "course": "Anwendungen der Mathematik, SP DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 10,
+            "subjectName": "Anwendungen der Mathematik",
+            "timegridId": 41,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4015124
+            ],
+            "teacherAcronym": "FeR",
+            "teacherFullName": [
+                "Ferrario Riccardo"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                37
+            ],
+            "roomName": "m424",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4015124",
+                "pe_4016519",
+                "cl_2050",
+                "lo_37",
+                "co_42960"
+            ]
+        },
+        {
+            "id": 2069391,
+            "timetableElementId": 41752,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767778500000.000000)\/",
+            "end": "\/Date(1767781200000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "10:35:00",
+            "lessonEnd": "11:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "E",
+            "halfClassLesson": null,
+            "courseId": 42926,
+            "courseName": "E",
+            "course": "Englisch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 4,
+            "subjectName": "Englisch",
+            "timegridId": 42,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4003950
+            ],
+            "teacherAcronym": "UhT",
+            "teacherFullName": [
+                "Uhlir Thomas"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                42
+            ],
+            "roomName": "m504",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4003950",
+                "pe_4016519",
+                "cl_2050",
+                "lo_42",
+                "co_42926"
+            ]
+        },
+        {
+            "id": 2086973,
+            "timetableElementId": 42242,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767781800000.000000)\/",
+            "end": "\/Date(1767784500000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "11:30:00",
+            "lessonEnd": "12:15:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "C",
+            "halfClassLesson": null,
+            "courseId": 42935,
+            "courseName": "Ch",
+            "course": "Chemie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 12,
+            "subjectName": "Chemie",
+            "timegridId": 43,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001535
+            ],
+            "teacherAcronym": "AmC",
+            "teacherFullName": [
+                "Ammann Christian"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                14
+            ],
+            "roomName": "c414",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001535",
+                "pe_4016519",
+                "cl_2050",
+                "lo_14",
+                "co_42935"
+            ]
+        },
+        {
+            "id": 2069368,
+            "timetableElementId": 41751,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767788400000.000000)\/",
+            "end": "\/Date(1767791100000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "13:20:00",
+            "lessonEnd": "14:05:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Gg",
+            "halfClassLesson": null,
+            "courseId": 42928,
+            "courseName": "Gg",
+            "course": "Geographie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 14,
+            "subjectName": "Geographie",
+            "timegridId": 45,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017759
+            ],
+            "teacherAcronym": "MoN",
+            "teacherFullName": [
+                "M\u00f6ckli Nicola"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                58
+            ],
+            "roomName": "m604",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017759",
+                "pe_4016519",
+                "cl_2050",
+                "lo_58",
+                "co_42928"
+            ]
+        },
+        {
+            "id": 2069230,
+            "timetableElementId": 41749,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767791700000.000000)\/",
+            "end": "\/Date(1767794400000.000000)\/",
+            "lessonDate": "2026-01-07",
+            "lessonStart": "14:15:00",
+            "lessonEnd": "15:00:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "G",
+            "halfClassLesson": null,
+            "courseId": 42930,
+            "courseName": "G",
+            "course": "Geschichte, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 1,
+            "subjectId": 15,
+            "subjectName": "Geschichte",
+            "timegridId": 46,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4002421
+            ],
+            "teacherAcronym": "FuM",
+            "teacherFullName": [
+                "Fuchs Matthias"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                22
+            ],
+            "roomName": "m401",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4002421",
+                "pe_4016519",
+                "cl_2050",
+                "lo_22",
+                "co_42930"
+            ]
+        },
+        {
+            "id": 2068724,
+            "timetableElementId": 41741,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767854700000.000000)\/",
+            "end": "\/Date(1767857400000.000000)\/",
+            "lessonDate": "2026-01-08",
+            "lessonStart": "07:45:00",
+            "lessonEnd": "08:30:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "B",
+            "halfClassLesson": null,
+            "courseId": 42927,
+            "courseName": "B",
+            "course": "Biologie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 13,
+            "subjectName": "Biologie",
+            "timegridId": 50,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001646
+            ],
+            "teacherAcronym": "WeB",
+            "teacherFullName": [
+                "Weber Schneider Barbara"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                3
+            ],
+            "roomName": "b326",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001646",
+                "pe_4016519",
+                "cl_2050",
+                "lo_3",
+                "co_42927"
+            ]
+        },
+        {
+            "id": 2069414,
+            "timetableElementId": 41752,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767858000000.000000)\/",
+            "end": "\/Date(1767860700000.000000)\/",
+            "lessonDate": "2026-01-08",
+            "lessonStart": "08:40:00",
+            "lessonEnd": "09:25:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "E",
+            "halfClassLesson": null,
+            "courseId": 42926,
+            "courseName": "E",
+            "course": "Englisch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 4,
+            "subjectName": "Englisch",
+            "timegridId": 51,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4003950
+            ],
+            "teacherAcronym": "UhT",
+            "teacherFullName": [
+                "Uhlir Thomas"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                49
+            ],
+            "roomName": "m518",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4003950",
+                "pe_4016519",
+                "cl_2050",
+                "lo_49",
+                "co_42926"
+            ]
+        },
+        {
+            "id": 2069069,
+            "timetableElementId": 41746,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767861300000.000000)\/",
+            "end": "\/Date(1767864000000.000000)\/",
+            "lessonDate": "2026-01-08",
+            "lessonStart": "09:35:00",
+            "lessonEnd": "10:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "M",
+            "halfClassLesson": null,
+            "courseId": 42933,
+            "courseName": "M",
+            "course": "Mathematik, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 9,
+            "subjectName": "Mathematik",
+            "timegridId": 52,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4015124
+            ],
+            "teacherAcronym": "FeR",
+            "teacherFullName": [
+                "Ferrario Riccardo"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                34
+            ],
+            "roomName": "m421",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4015124",
+                "pe_4016519",
+                "cl_2050",
+                "lo_34",
+                "co_42933"
+            ]
+        },
+        {
+            "id": 2069184,
+            "timetableElementId": 41748,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767864900000.000000)\/",
+            "end": "\/Date(1767867600000.000000)\/",
+            "lessonDate": "2026-01-08",
+            "lessonStart": "10:35:00",
+            "lessonEnd": "11:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Ph",
+            "halfClassLesson": null,
+            "courseId": 42961,
+            "courseName": "P",
+            "course": "Physik, SP DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 11,
+            "subjectName": "Physik",
+            "timegridId": 53,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001563
+            ],
+            "teacherAcronym": "LiM",
+            "teacherFullName": [
+                "Lieberherr Martin"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                67
+            ],
+            "roomName": "p342",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001563",
+                "pe_4016519",
+                "cl_2050",
+                "lo_67",
+                "co_42961"
+            ]
+        },
+        {
+            "id": 2071185,
+            "timetableElementId": 41792,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767868200000.000000)\/",
+            "end": "\/Date(1767870900000.000000)\/",
+            "lessonDate": "2026-01-08",
+            "lessonStart": "11:30:00",
+            "lessonEnd": "12:15:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "F",
+            "halfClassLesson": null,
+            "courseId": 42931,
+            "courseName": "F",
+            "course": "Franz\u00f6sisch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 2,
+            "subjectName": "Franz\u00f6sisch",
+            "timegridId": 54,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017761
+            ],
+            "teacherAcronym": "BiL",
+            "teacherFullName": [
+                "Biron Laura"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                45
+            ],
+            "roomName": "m513",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017761",
+                "pe_4016519",
+                "cl_2050",
+                "lo_45",
+                "co_42931"
+            ]
+        },
+        {
+            "id": 2098490,
+            "timetableElementId": 42541,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767941100000.000000)\/",
+            "end": "\/Date(1767943800000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "07:45:00",
+            "lessonEnd": "08:30:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "SpK",
+            "halfClassLesson": null,
+            "courseId": 42929,
+            "courseName": "Sp",
+            "course": "Sport, GF DnTn (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 23,
+            "subjectName": "Sport",
+            "timegridId": 61,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001592
+            ],
+            "teacherAcronym": "EbW",
+            "teacherFullName": [
+                "Ebner Wolfgang"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                76
+            ],
+            "roomName": "TG",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001592",
+                "pe_4016519",
+                "cl_2050",
+                "lo_76",
+                "co_42929"
+            ]
+        },
+        {
+            "id": 2098513,
+            "timetableElementId": 42541,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767944400000.000000)\/",
+            "end": "\/Date(1767947100000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "08:40:00",
+            "lessonEnd": "09:25:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "SpK",
+            "halfClassLesson": null,
+            "courseId": 42929,
+            "courseName": "Sp",
+            "course": "Sport, GF DnTn (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 23,
+            "subjectName": "Sport",
+            "timegridId": 62,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001592
+            ],
+            "teacherAcronym": "EbW",
+            "teacherFullName": [
+                "Ebner Wolfgang"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                76
+            ],
+            "roomName": "TG",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001592",
+                "pe_4016519",
+                "cl_2050",
+                "lo_76",
+                "co_42929"
+            ]
+        },
+        {
+            "id": 2086996,
+            "timetableElementId": 42242,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767947700000.000000)\/",
+            "end": "\/Date(1767950400000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "09:35:00",
+            "lessonEnd": "10:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "C",
+            "halfClassLesson": null,
+            "courseId": 42935,
+            "courseName": "Ch",
+            "course": "Chemie, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 12,
+            "subjectName": "Chemie",
+            "timegridId": 63,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001535
+            ],
+            "teacherAcronym": "AmC",
+            "teacherFullName": [
+                "Ammann Christian"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                14
+            ],
+            "roomName": "c414",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001535",
+                "pe_4016519",
+                "cl_2050",
+                "lo_14",
+                "co_42935"
+            ]
+        },
+        {
+            "id": 2069437,
+            "timetableElementId": 41752,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767951300000.000000)\/",
+            "end": "\/Date(1767954000000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "10:35:00",
+            "lessonEnd": "11:20:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "E",
+            "halfClassLesson": null,
+            "courseId": 42926,
+            "courseName": "E",
+            "course": "Englisch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 4,
+            "subjectName": "Englisch",
+            "timegridId": 64,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4003950
+            ],
+            "teacherAcronym": "UhT",
+            "teacherFullName": [
+                "Uhlir Thomas"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                42
+            ],
+            "roomName": "m504",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4003950",
+                "pe_4016519",
+                "cl_2050",
+                "lo_42",
+                "co_42926"
+            ]
+        },
+        {
+            "id": 2109117,
+            "timetableElementId": 205799,
+            "holidayId": 0,
+            "blockId": [
+                205793
+            ],
+            "blockTeacherId": [
+                4001563,
+                4001603,
+                4001735,
+                4004664,
+                4006152,
+                4007791,
+                4014447,
+                4016481,
+                4017054,
+                4017057
+            ],
+            "blockClassId": [
+                2019,
+                2020,
+                2043,
+                2044,
+                2045,
+                2046,
+                2047,
+                2048,
+                2049,
+                2050
+            ],
+            "blockRoomId": [
+                0
+            ],
+            "modId": 205799,
+            "periodId": 83,
+            "start": "\/Date(1767954600000.000000)\/",
+            "end": "\/Date(1767957300000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "11:30:00",
+            "lessonEnd": "12:15:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": "1",
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 11,
+            "timetableEntryType": "substitution",
+            "timetableEntryTypeLong": "canceled lesson",
+            "timetableEntryTypeShort": "cancel",
+            "messageId": 189887,
+            "message": "Infoveranstaltung Maturarbeit, Aula",
+            "output": "",
+            "title": "+",
+            "halfClassLesson": "0",
+            "courseId": 42964,
+            "courseName": "KSt",
+            "course": "Klassenstunde, GF DnTn (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 37,
+            "subjectName": "Klassenstunde",
+            "timegridId": 0,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4001563
+            ],
+            "teacherAcronym": "LiM",
+            "teacherFullName": [
+                "Lieberherr Martin"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                67
+            ],
+            "roomName": "p342",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4001563",
+                "pe_4016519",
+                "cl_2050",
+                "lo_67",
+                "co_42964"
+            ]
+        },
+        {
+            "id": 2068977,
+            "timetableElementId": 41745,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767961200000.000000)\/",
+            "end": "\/Date(1767963900000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "13:20:00",
+            "lessonEnd": "14:05:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "D",
+            "halfClassLesson": null,
+            "courseId": 42925,
+            "courseName": "D",
+            "course": "Deutsch, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 1,
+            "subjectName": "Deutsch",
+            "timegridId": 67,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017638
+            ],
+            "teacherAcronym": "NaM",
+            "teacherFullName": [
+                "Naef Marcel"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                34
+            ],
+            "roomName": "m421",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017638",
+                "pe_4016519",
+                "cl_2050",
+                "lo_34",
+                "co_42925"
+            ]
+        },
+        {
+            "id": 2080546,
+            "timetableElementId": 42066,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767964500000.000000)\/",
+            "end": "\/Date(1767967200000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "14:15:00",
+            "lessonEnd": "15:00:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "Inf",
+            "halfClassLesson": null,
+            "courseId": 42965,
+            "courseName": "If",
+            "course": "Informatik, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": false,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 24,
+            "subjectName": "Informatik",
+            "timegridId": 68,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4017698
+            ],
+            "teacherAcronym": "BiR",
+            "teacherFullName": [
+                "Bischofberger Roland"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                36
+            ],
+            "roomName": "m423",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4017698",
+                "pe_4016519",
+                "cl_2050",
+                "lo_36",
+                "co_42965"
+            ]
+        },
+        {
+            "id": 2069253,
+            "timetableElementId": 41749,
+            "holidayId": 0,
+            "blockId": [],
+            "blockTeacherId": [],
+            "blockClassId": [],
+            "blockRoomId": [],
+            "modId": 0,
+            "periodId": 83,
+            "start": "\/Date(1767967800000.000000)\/",
+            "end": "\/Date(1767970500000.000000)\/",
+            "lessonDate": "2026-01-09",
+            "lessonStart": "15:10:00",
+            "lessonEnd": "15:55:00",
+            "examModification": 0,
+            "lessonDuration": "00:45:00.000000",
+            "nbrOfModifiedLessons": null,
+            "connectedId": null,
+            "isAllDay": 0,
+            "timetableEntryTypeId": 1,
+            "timetableEntryType": "lesson",
+            "timetableEntryTypeLong": "lesson",
+            "timetableEntryTypeShort": "lesson",
+            "messageId": 0,
+            "message": null,
+            "output": null,
+            "title": "G",
+            "halfClassLesson": null,
+            "courseId": 42930,
+            "courseName": "G",
+            "course": "Geschichte, GF DjTj (3h )",
+            "courseLong": "",
+            "isExamLesson": true,
+            "isCheckedLesson": false,
+            "lessonAbsenceCount": 0,
+            "subjectId": 15,
+            "subjectName": "Geschichte",
+            "timegridId": 69,
+            "classId": [
+                2050
+            ],
+            "className": "3h",
+            "profileId": "45",
+            "teamId": "",
+            "teacherId": [
+                4002421
+            ],
+            "teacherAcronym": "FuM",
+            "teacherFullName": [
+                "Fuchs Matthias"
+            ],
+            "teacherLastname": "",
+            "teacherFirstname": "",
+            "connectedTeacherId": [],
+            "connectedTeacherFullName": [],
+            "student": [
+                {
+                    "studentId": 4016519,
+                    "studentName": "Brunner, Kai"
+                }
+            ],
+            "studentId": [],
+            "studentFullName": "",
+            "studentLastname": "",
+            "studentFirstname": "",
+            "roomId": [
+                22
+            ],
+            "roomName": "m401",
+            "locationDescription": "",
+            "resourceId": [],
+            "timetableClassBookId": 0,
+            "hasHomework": false,
+            "hasHomeworkFiles": false,
+            "hasExam": false,
+            "hasExamFiles": false,
+            "privileges": [
+                "absence_own"
+            ],
+            "resource": null,
+            "reservedResources": 0,
+            "totalStock": 0,
+            "school": "",
+            "relatedId": [
+                "pe_4002421",
+                "pe_4016519",
+                "cl_2050",
+                "lo_22",
+                "co_42930"
+            ]
+        }
+    ]
+}
