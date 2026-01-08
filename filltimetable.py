@@ -194,6 +194,7 @@ def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectna
 #Final function that updates the data base
 
 def upsert_db():
+    """
     user = current_user()
     
     session, csrf_token = login_to_tam(user.username, user.getplainpass(), 'krm')
@@ -205,7 +206,7 @@ def upsert_db():
     json_path = os.path.join(base_dir, "intranet.json")
     with open(json_path, "r") as f:
         data = json.load(f)
-    """
+   
     
     data = data["data"]
     lenData = len(data)
