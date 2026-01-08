@@ -191,7 +191,7 @@ def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectna
 #Final function that updates the data base
 
 def upsert_db():
-    conn = db.get_conn()
+    conn = get_conn()
     with open("Intranet.json", "r") as f:
         data = json.load(f)
     data = data["data"]
