@@ -165,7 +165,7 @@ def timetable():
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
     # Hier übergeben wir die Rohdaten an das Template
     timetable = db_read("SELECT username FROM users ORDER BY username", ())
-    return render_template("timetable.html", timetable=lesson)
+    return render_template("timetable.html", lesson=timetable)
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
