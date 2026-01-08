@@ -184,7 +184,7 @@ def complete():
 @login_required
 def filltimetable_route():
     upsert_db();
-    timetable();
+    return timetable();
     
 if __name__ == "__main__":
     app.run()
