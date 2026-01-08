@@ -2,6 +2,7 @@ import json
 import mysql.connector
 import re
 from db import get_conn
+import os
 
 #Checks if a value already exists in a table
 
@@ -192,7 +193,9 @@ def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectna
 
 def upsert_db():
     conn = get_conn()
-    with open("intranet.json", "r") as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(base_dir, "intranet.json")
+    with open(json_path, "r") as f:
         data = json.load(f)
     data = data["data"]
     lenData = len(data)
