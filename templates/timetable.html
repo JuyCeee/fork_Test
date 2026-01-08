@@ -347,7 +347,7 @@
     </g>
 
     <g id="lessons-container">
-    {% for lesson in lessons %}
+    {% for lesson in timetable %}
         {# Beispielhafte Berechnung: 100px pro Stunde, Start bei 8:00 (28800000 ms) #}
         {% set y_pos = (lesson.start_time % 86400000 - 28800000) / 36000 %}
         
