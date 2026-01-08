@@ -9,6 +9,7 @@ from db import db_read, db_write
 from auth import login_manager, authenticate, register_user
 from flask_login import login_user, logout_user, login_required, current_user
 import logging
+import filltimetable
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -178,6 +179,13 @@ def complete():
     todo_id = request.form.get("id")
     db_write("DELETE FROM todos WHERE user_id=%s AND id=%s", (current_user.id, todo_id,))
     return redirect(url_for("index"))
+    
+@app.route("/filltimetable", methods=["GET"])
+@login_required
 
+def filltimetable():
+    filltimetable.Upsert_db();
+    timetable()
+    
 if __name__ == "__main__":
     app.run()
