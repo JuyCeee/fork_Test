@@ -134,7 +134,7 @@ def grades():
 @app.route("/overview", methods=["GET"])
 @login_required
 def overview():
-    overview = db_read("SELECT username FROM users ORDER BY username", ())
+    
     return render_template("overview.html", overview=overview)
 
 @app.route("/timetable", methods=["GET"])
