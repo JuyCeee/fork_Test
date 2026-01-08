@@ -134,17 +134,38 @@ def grades():
 @app.route("/overview", methods=["GET"])
 @login_required
 def overview():
+    
     return render_template("overview.html", overview=overview)
 
 @app.route("/timetable", methods=["GET"])
 @login_required
 def timetable():
     # SQL-Abfrage, um alle relevanten Informationen einer Lektion zu erhalten
-    
+    query = """
+    SELECT 
+        t.start_time, 
+        t.end_time, 
+        s.name AS subject_name, 
+        s.shortened AS subject_short,
+        r.num AS room_number,
+        tea.initials AS teacher_initials,
+        h.txt AS homework_text,
+        m.message AS lesson_message
+    FROM timetable t
+    LEFT JOIN subject s ON t.subject_id = s.id
+    LEFT JOIN homework h ON t.homework_id = h.id
+    LEFT JOIN message m ON t.message_id = m.id
+    LEFT JOIN cross_timetable_room ctr ON t.id = ctr.timetable_id
+    LEFT JOIN room r ON ctr.room_id = r.id
+    LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
+    LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
+    ORDER BY t.start_time
+    """
     
     
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
     # Hier übergeben wir die Rohdaten an das Template
+    timetable = db_read("SELECT username FROM users ORDER BY username", ())
     return render_template("timetable.html", timetable=timetable)
 
 @app.route("/", methods=["GET", "POST"])
