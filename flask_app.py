@@ -154,6 +154,7 @@ def overview():
     LEFT JOIN room r ON ctr.room_id = r.id
     LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
     LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
+    WHERE h.id != NULL OR t.exam == TRUE
     ORDER BY t.start_time
     """
     overview = db_read(query, ())
