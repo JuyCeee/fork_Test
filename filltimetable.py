@@ -249,8 +249,4 @@ def upsert_db():
         timetableelementid = data[i]["id"]
         examvalue = data[i]["isExamLesson"]
         insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectname, subjectnameshort, homeworktxt, homeworkfile, homeworktitle, messagemessage, classname, specialtype, starttime, endtime, timetableelementid, examvalue)
-        try:
-            cur.close()
-        except:
-            pass
-        conn.close()
+    conn.close()
