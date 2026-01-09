@@ -16,19 +16,19 @@ DROP TABLE absence;
 CREATE TABLE absence (
     id INT AUTO_INCREMENT PRIMARY KEY,
     type VARCHAR(50) NOT NULL,
-    status VARCHAR(50) NOT NULL,
-);
-
-CREATE TABLE grade (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    mark FLOAT,
-    weight FLOAT
+    status VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE teacher (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     initials VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE grade (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    mark FLOAT,
+    weight FLOAT
 );
 
 CREATE TABLE room (
@@ -59,25 +59,21 @@ CREATE TABLE class_ (
     name VARCHAR(10) NOT NULL
 );
 
-CREATE TABLE special (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    type VARCHAR(100) NOT NULL
-);
-
 CREATE TABLE timetable (
     id INT AUTO_INCREMENT PRIMARY KEY,
     subject_id INT,
     homework_id INT,
     message_id INT,
+    absence_id INT,
     start_time BIGINT NOT NULL,
     end_time BIGINT NOT NULL,
-    special_id INT,
+    special_type INT NOT NULL,
     element_id INT,
     exam BOOLEAN NOT NULL,
     FOREIGN KEY (subject_id) REFERENCES subject(id),
     FOREIGN KEY (homework_id) REFERENCES homework(id),
     FOREIGN KEY (message_id) REFERENCES message(id),
-    FOREIGN KEY (special_id) REFERENCES special(id)
+    FOREIGN KEY (absence_id) REFERENCES absence(id)
 );
 
 CREATE TABLE cross_timetable_class (
@@ -102,12 +98,4 @@ CREATE TABLE cross_timetable_room (
     room_id INT,
     FOREIGN KEY (timetable_id) REFERENCES timetable(id),
     FOREIGN KEY (room_id) REFERENCES room(id)
-);
-
-CREATE TABLE cross_timetable_absence (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    timetable_id INT,
-    absence_id INT,
-    FOREIGN KEY (timetable_id) REFERENCES timetable(id),
-    FOREIGN KEY (absence_id) REFERENCES absence(id)
 );
