@@ -117,24 +117,24 @@ def users():
 
 
 #@app.route("/users", methods=["GET"])
-##@login_required
+#@login_required
 #def users():
 #    pass
 
 @app.route("/absences", methods=["GET"])
-##@login_required
+#@login_required
 def absence():
     absence = db_read("SELECT status FROM absence ORDER BY status", ())
     return render_template("absences.html", absence=absence)
 
 @app.route("/grades", methods=["GET"])
-##@login_required
+#@login_required
 def grades():
     grades = db_read("SELECT username FROM users ORDER BY username", ())
     return render_template("grades.html", grades=grades)
 
 @app.route("/overview", methods=["GET"])
-##@login_required
+#@login_required
 def overview():
     query = """
     SELECT 
@@ -162,7 +162,7 @@ def overview():
     return render_template("overview.html", overview=overview)
 
 @app.route("/timetable", methods=["GET"])
-###@login_required
+#@login_required
 def timetablee():
     conn = get_conn()
     filter = request.args.get("filter", "3h")
