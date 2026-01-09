@@ -26,12 +26,12 @@ def db_read(sql, params=None, single=False):
         if single:
             # liefert EIN Dict oder None
             row = cur.fetchone()
-            print("db_read(single=True) ->", row)   # DEBUG
+           #print("db_read(single=True) ->", row)   # DEBUG
             return row
         else:
             # liefert Liste von Dicts (evtl. [])
             rows = cur.fetchall()
-            print("db_read(single=False) ->", rows)  # DEBUG
+            #print("db_read(single=False) ->", rows)  # DEBUG
             return rows
 
     finally:
