@@ -204,7 +204,7 @@ def timetable():
         WHERE {table}.{attribute} = %s
         ORDER BY t.start_time
         """
-        timetable = db_read(query, ())
+        timetable = db_read(query, (sorting_factor,))
     else:
         timetable = None
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
