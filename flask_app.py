@@ -143,13 +143,13 @@ def overview():
         s.shortened AS subject_short,
         h.txt AS homework_text,
         m.message AS lesson_message,
-        h.id,
+        h.txt,
         t.exam
     FROM timetable t
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    WHERE (t.exam = TRUE OR h.id IS NOT NULL)
+    WHERE (t.exam = TRUE OR h.txt IS NOT NULL)
     ORDER BY t.start_time
     """
 
