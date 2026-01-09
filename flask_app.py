@@ -103,14 +103,14 @@ def register():
     )
 
 @app.route("/logout")
-##@login_required
+@login_required
 def logout():
     logout_user()
     return redirect(url_for("index"))
 
 
 @app.route("/users", methods=["GET"])
-##@login_required
+@login_required
 def users():
     users = db_read("SELECT username FROM users ORDER BY username", ())
     return render_template("users.html", users=users)
@@ -122,19 +122,19 @@ def users():
 #    pass
 
 @app.route("/absences", methods=["GET"])
-#@login_required
+@login_required
 def absence():
     absence = db_read("SELECT status FROM absence ORDER BY status", ())
     return render_template("absences.html", absence=absence)
 
 @app.route("/grades", methods=["GET"])
-#@login_required
+@login_required
 def grades():
     grades = db_read("SELECT username FROM users ORDER BY username", ())
     return render_template("grades.html", grades=grades)
 
 @app.route("/overview", methods=["GET"])
-#@login_required
+@login_required
 def overview():
     query = """
     SELECT 
@@ -162,7 +162,7 @@ def overview():
     return render_template("overview.html", overview=overview)
 
 @app.route("/timetable", methods=["GET"])
-#@login_required
+@login_required
 def timetable():
     conn = get_conn()
     filter = request.args.get("filter", "3h")
@@ -216,19 +216,19 @@ def timetable():
     return render_template("timetable.html", timetable=timetable)
 
 @app.route("/", methods=["GET", "POST"])
-#@login_required
+@login_required
 def index():
     return redirect(url_for("timetable"))
 
 @app.post("/complete")
-#@login_required
+@login_required
 def complete():
     todo_id = request.form.get("id")
     db_write("DELETE FROM todos WHERE user_id=%s AND id=%s", (current_user.id, todo_id,))
     return redirect(url_for("index"))
     
 @app.route("/filltimetable", methods=["GET"])
-#@login_required
+@login_required
 def filltimetable_route():
     upsert_db();
     return timetable();
