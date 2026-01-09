@@ -149,7 +149,7 @@ def overview():
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    WHERE (t.exam = TRUE)
+    WHERE (t.exam = TRUE OR h.id IS NOT NULL)
     ORDER BY t.start_time
     """
 
