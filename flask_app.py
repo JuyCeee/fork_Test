@@ -181,10 +181,6 @@ def timetable():
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    LEFT JOIN cross_timetable_room ctr ON t.id = ctr.timetable_id
-    LEFT JOIN room r ON ctr.room_id = r.id
-    LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
-    LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
     ORDER BY t.start_time
     """
     timetable = db_read(query, ())
