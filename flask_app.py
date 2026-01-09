@@ -162,8 +162,8 @@ def overview():
 
 @app.route("/timetable", methods=["GET"])
 @login_required
-sorting_factor = "3h"
-def timetable(sorting_factor):
+def timetable():
+    sorting_factor = "3h"
     x = True
     cursor = conn.cursor(dictionary=True, buffered=True)
     if check_if_already_there(conn, "class_", "name", sorting_factor):
