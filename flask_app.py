@@ -10,7 +10,7 @@ from auth import login_manager, authenticate, register_user
 from flask_login import login_user, logout_user, login_required, current_user
 import logging
 from filltimetable import upsert_db, check_if_already_there
-
+import re
 
 logging.basicConfig(
     level=logging.DEBUG,
