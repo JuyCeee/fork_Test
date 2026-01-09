@@ -149,7 +149,7 @@ def overview():
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    WHERE s.shortened = 'IU'
+    WHERE (t.exam = TRUE)
     ORDER BY t.start_time
     """
 
