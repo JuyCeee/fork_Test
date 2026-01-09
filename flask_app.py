@@ -142,14 +142,18 @@ def overview():
         t.end_time, 
         s.name AS subject_name, 
         s.shortened AS subject_short,
+        r.num AS room_number,
+        tea.initials AS teacher_initials,
         h.txt AS homework_text,
-        h.id,
-        t.exam,
         m.message AS lesson_message
     FROM timetable t
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
+    LEFT JOIN cross_timetable_room ctr ON t.id = ctr.timetable_id
+    LEFT JOIN room r ON ctr.room_id = r.id
+    LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
+    LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
     ORDER BY t.start_time
     """
     overview = db_read(query, ())
