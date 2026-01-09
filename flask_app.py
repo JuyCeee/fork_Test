@@ -5,11 +5,12 @@ import os
 import git
 import hmac
 import hashlib
-from db import db_read, db_write
+from db import db_read, db_write, get_conn
 from auth import login_manager, authenticate, register_user
 from flask_login import login_user, logout_user, login_required, current_user
 import logging
-from filltimetable import upsert_db
+from filltimetable import upsert_db, check_if_already_there
+
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -162,30 +163,54 @@ def overview():
 
 @app.route("/timetable", methods=["GET"])
 @login_required
-def timetable():
-    # SQL-Abfrage, um alle relevanten Informationen einer Lektion zu erhalten
-    query = """
-    SELECT 
-        t.start_time, 
-        t.end_time, 
-        s.name AS subject_name, 
-        s.shortened AS subject_short,
-        r.num AS room_number,
-        tea.initials AS teacher_initials,
-        h.txt AS homework_text,
-        m.message AS lesson_message
-    FROM timetable t
-    LEFT JOIN subject s ON t.subject_id = s.id
-    LEFT JOIN homework h ON t.homework_id = h.id
-    LEFT JOIN message m ON t.message_id = m.id
-    LEFT JOIN cross_timetable_room ctr ON t.id = ctr.timetable_id
-    LEFT JOIN room r ON ctr.room_id = r.id
-    LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
-    LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
-    ORDER BY t.start_time
-    """
-    timetable = db_read(query, ())
-    
+def timetablee():
+    conn = get_conn()
+    filter = request.args.get("filter", "3h")
+    # Prevent sql injection
+    pattern = r"'"
+    filter = re.sub(pattern, "", filter)
+    x = True
+    cursor = conn.cursor(dictionary=True, buffered=True)
+    if check_if_already_there(conn, "class_", "name", filter):
+        table = "c"
+        attribute = "name"
+    elif check_if_already_there(conn, "teacher", "name", filter):
+        table = "tea"
+        attribute = "name"
+    elif check_if_already_there(conn, "room", "num", filter):
+        table = "r"
+        attribute = "num"
+    else:
+        x = False
+    if x == True:
+        # SQL-Abfrage, um alle relevanten Informationen einer Lektion zu erhalten
+        query = f"""
+        SELECT 
+            t.start_time, 
+            t.end_time, 
+            s.name AS subject_name, 
+            s.shortened AS subject_short,
+            r.num AS room_number,
+            tea.initials AS teacher_initials,
+            h.txt AS homework_text,
+            m.message AS lesson_message,
+            c.name AS class_name
+        FROM timetable t
+        LEFT JOIN subject s ON t.subject_id = s.id
+        LEFT JOIN homework h ON t.homework_id = h.id
+        LEFT JOIN message m ON t.message_id = m.id
+        LEFT JOIN cross_timetable_room ctr ON t.id = ctr.timetable_id
+        LEFT JOIN room r ON ctr.room_id = r.id
+        LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
+        LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
+        LEFT JOIN cross_timetable_class ctc ON t.id = ctc.timetable_id
+        LEFT JOIN class_ c ON ctc.class_id = c.id
+        WHERE {table}.{attribute} = '{filter}'
+        ORDER BY t.start_time
+        """
+        timetable = db_read(query)
+    else:
+        timetable = None
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
     # Hier übergeben wir die Rohdaten an das Template
     return render_template("timetable.html", timetable=timetable)
