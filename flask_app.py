@@ -190,7 +190,6 @@ def timetable():
             h.txt AS homework_text,
             m.message AS lesson_message,
             c.name AS class_name
-
         FROM timetable t
         LEFT JOIN subject s ON t.subject_id = s.id
         LEFT JOIN homework h ON t.homework_id = h.id
