@@ -148,7 +148,7 @@ def overview():
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    WHERE s.name = "IU"
+    WHERE t.start_time > 10000000
     ORDER BY t.start_time
     """
     overview = db_read(query, ())
