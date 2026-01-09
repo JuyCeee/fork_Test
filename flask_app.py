@@ -150,7 +150,6 @@ def overview():
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    WHERE (h.id IS NOT NULL OR t.exam = TRUE)
     ORDER BY t.start_time
     """
     overview = db_read(query, ())
