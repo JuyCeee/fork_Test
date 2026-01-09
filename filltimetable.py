@@ -203,7 +203,7 @@ def upsert_db():
     data =json.load(json)
     """
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(base_dir, "intranetfullcleaned.json")
+    json_path = os.path.join(base_dir, "intranetfullcleanedwithhomework.json")
     with open(json_path, "r") as f:
         data = json.load(f)
    
