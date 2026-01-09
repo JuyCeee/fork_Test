@@ -163,7 +163,7 @@ def overview():
 
 @app.route("/timetable", methods=["GET"])
 #@login_required
-def timetablee():
+def timetable():
     conn = get_conn()
     filter = request.args.get("filter", "3h")
     # Prevent sql injection
