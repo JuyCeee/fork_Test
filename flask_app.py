@@ -135,7 +135,35 @@ def grades():
 @app.route("/overview", methods=["GET"])
 @login_required
 def overview():
+    query = """
+    SELECT 
+        t.start_time, 
+        t.end_time, 
+        s.name AS subject_name, 
+        s.shortened AS subject_short,
+        h.txt AS homework_text,
+        m.message AS lesson_message,
+        h.id,
+        t.exam
+    FROM timetable t
+    LEFT JOIN subject s ON t.subject_id = s.id
+    LEFT JOIN homework h ON t.homework_id = h.id
+    LEFT JOIN message m ON t.message_id = m.id
+    WHERE s.shortened = 'IU'
+    ORDER BY t.start_time
+    """
 
+    overview = db_read(query, ())
+    
+    # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
+    # Hier übergeben wir die Rohdaten an das Template
+    
+    return render_template("overview.html", overview=overview)
+
+@app.route("/timetable", methods=["GET"])
+@login_required
+def timetable():
+    # SQL-Abfrage, um alle relevanten Informationen einer Lektion zu erhalten
     query = """
     SELECT 
         t.start_time, 
@@ -154,34 +182,6 @@ def overview():
     LEFT JOIN room r ON ctr.room_id = r.id
     LEFT JOIN cross_timetable_teacher ctt ON t.id = ctt.timetable_id
     LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
-    ORDER BY t.start_time
-    """
-    overview = db_read(query, ())
-    
-    # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
-    # Hier übergeben wir die Rohdaten an das Template
-    
-    return render_template("overview.html", overview=overview)
-
-@app.route("/timetable", methods=["GET"])
-@login_required
-def timetable():
-    # SQL-Abfrage, um alle relevanten Informationen einer Lektion zu erhalten
-    query = """
-    SELECT 
-        t.start_time, 
-        t.end_time, 
-        s.name AS subject_name, 
-        s.shortened AS subject_short,
-        h.txt AS homework_text,
-        m.message AS lesson_message,
-        h.id,
-        t.exam
-    FROM timetable t
-    LEFT JOIN subject s ON t.subject_id = s.id
-    LEFT JOIN homework h ON t.homework_id = h.id
-    LEFT JOIN message m ON t.message_id = m.id
-    WHERE s.shortened = 'IU'
     ORDER BY t.start_time
     """
     timetable = db_read(query, ())
