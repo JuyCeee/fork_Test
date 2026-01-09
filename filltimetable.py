@@ -219,8 +219,8 @@ def upsert_db():
         subjectname = data[i]["subjectName"]
         subjectnameshort = data[i]["title"]
         homeworktxt = None
-        homeworkfile = None
-        homeworktitle = None
+        homeworkfile = data[i]["hasHomeworkFiles"]
+        homeworktitle = data[i]["hasHomework"]
         messagemessage = data[i]["message"]
         classname = data[i]["className"]
         specialtype = data[i]["timetableEntryTypeId"]
