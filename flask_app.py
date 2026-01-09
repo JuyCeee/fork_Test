@@ -173,8 +173,6 @@ def timetable():
         t.end_time, 
         s.name AS subject_name, 
         s.shortened AS subject_short,
-        r.num AS room_number,
-        tea.initials AS teacher_initials,
         h.txt AS homework_text,
         m.message AS lesson_message
     FROM timetable t
