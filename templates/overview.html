@@ -111,8 +111,8 @@
           </text>
           
           <text x="10" y="55" font-family="Arial" font-size="14" fill="#333">
-            {{ lesson.teacher_initials }} | {{ lesson.lesson_message or '' }}
-        </text>
+              {{ lesson.lesson_message or '' }}
+          </text>
         
         {% if lesson.homework_text %}
             <circle cx="380" cy="20" r="5" fill="red" /> {% endif %}
