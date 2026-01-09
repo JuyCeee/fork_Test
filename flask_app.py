@@ -143,8 +143,8 @@ def overview():
         s.name AS subject_name, 
         s.shortened AS subject_short,
         h.txt AS homework_text,
-        h.id
-        t.exam
+        h.id,
+        t.exam,
         m.message AS lesson_message
     FROM timetable t
     LEFT JOIN subject s ON t.subject_id = s.id
