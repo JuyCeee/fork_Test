@@ -34,7 +34,7 @@ def insert_teacher(conn, namelist, acronymliststring):
 
                 cursor.execute(sql, values)
                 conn.commit()
-            
+
                 x = cursor.lastrowid
                 ids.append(x)
             else: 
@@ -82,7 +82,7 @@ def one_var_insert(conn, table, attribute, value):
 def insert_class(conn, classnames):
     if classnames is not None:
         ids = []
-        classnames = classnames.split(",")
+        classnames = classnames.split(", ")
         classlen = len(classnames)
         for i in range(classlen):
             classname = classnames[i]
@@ -95,7 +95,7 @@ def insert_class(conn, classnames):
 def insert_room(conn, roomnames):
     if roomnames is not None:
         ids = []
-        roomnames = roomnames.split(",")
+        roomnames = roomnames.split(", ")
         roomlen = len(roomnames)
         for i in range(roomlen):
             roomname = roomnames[i]
@@ -112,16 +112,9 @@ def insert_message(conn, message):
         x = None
     return x
 
-def insert_special(conn, special):
-    if special is not None:
-        x = one_var_insert(conn, "special", "type", special)
-    else:
-        x = None
-    return x
-
 def insert_homework(conn, txt, file, title):
     cursor = conn.cursor(dictionary=True, buffered=True)
-    if file or title is not None:
+    if file is not None and title == True:
         x = check_if_already_there(conn, "homework", "title", title)
         if not x:
             sql = "INSERT INTO homework (txt, file, title) VALUES (%s, %s, %s)"
@@ -134,6 +127,26 @@ def insert_homework(conn, txt, file, title):
             id = x
         else: 
             id = x["id"]
+    else:
+        id = None
+    return id
+
+def insert_absence(conn, type, status ):
+    cursor = conn.cursor(dictionary=True, buffered=True)
+    if type is not None:
+        sql = f"SELECT id FROM absence WHERE type=%s AND status=%s"    
+        cursor.execute(sql, (type, status))
+        if not cursor.fetchone():
+            sql = f"INSERT INTO absence (type, status) VALUES (%s, %s)"
+            values = (type, status)
+
+            cursor.execute(sql, values)
+            conn.commit()
+
+            x = cursor.lastrowid
+            id = x
+        else:
+            id = None
     else:
         id = None
     return id
@@ -156,27 +169,34 @@ def insert_cross_table(conn, other_table, timetable_id, other_id_list):
                 pass
     else:
         pass
-def insert_timetable(conn, subject_id, homework_id, message_id, start_time, end_time, special_id, element_id, exam):
+def insert_timetable(conn, subject_id, homework_id, message_id, absence_id, start_time, end_time, special_type, element_id, exam):
     cursor = conn.cursor(dictionary=True, buffered=True)
     x = check_if_already_there(conn, "timetable", "element_id", element_id)
     if not x:
-        sql = "INSERT INTO timetable (subject_id, homework_id, message_id, start_time, end_time, special_id, element_id, exam) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
-        values = (subject_id, homework_id, message_id, start_time, end_time, special_id, element_id, exam)
+        sql = "INSERT INTO timetable (subject_id, homework_id, message_id, absence_id, start_time, end_time, special_type, element_id, exam) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        values = (subject_id, homework_id, message_id, absence_id, start_time, end_time, special_type, element_id, exam)
 
         cursor.execute(sql, values)
         conn.commit()
             
         x = cursor.lastrowid
         id = x
-    else: 
+    else:
         id = x["id"]
     return id
 
-
 #Taking all the seperate functions and making one that takes all the inputs and saves them and links them by their foreign key
 
-
 def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectname, subjectnameshort, homeworktxt, homeworkfile, homeworktitle, messagemessage, classname, specialtype, starttime, endtime, timetableelementid, examvalue):
+    randomnum = random.random()
+    possiblestatus = ["jokertag", "unentschuldigt", "entschuldigt"]
+    if randomnum > 0.9:
+        typefiller = "abwesend"
+        statusfiller = random.choice(possiblestatus)
+    else:
+        typefiller = None
+        statusfiller = None
+    absenceid = insert_absence(conn, typefiller, statusfiller)
     starttime = int(re.search(r'\d+', starttime).group())
     endtime = int(re.search(r'\d+', endtime).group())
     teacherid = insert_teacher(conn, teachername, teacherinitials)
@@ -185,11 +205,10 @@ def insert_whole_joint(conn, teachername, teacherinitials, roomnumber, subjectna
     homeworkid = insert_homework(conn, homeworktxt, homeworkfile, homeworktitle)
     messagid = insert_message(conn, messagemessage)
     classid = insert_class(conn, classname)
-    specialid = insert_special(conn, specialtype)
-    timetableid = insert_timetable(conn, subjectid, homeworkid, messagid, starttime, endtime, specialid, timetableelementid, examvalue)
+    timetableid = insert_timetable(conn, subjectid, homeworkid, messagid, absenceid, starttime, endtime, specialtype, timetableelementid, examvalue)
     insert_cross_table(conn, "teacher",timetableid, teacherid)
-    insert_cross_table(conn, "room",timetableid, roomid)
-    insert_cross_table(conn, "class",timetableid, classid)
+    insert_cross_table(conn, "room", timetableid, roomid)
+    insert_cross_table(conn, "class", timetableid, classid)
 
 #Final function that updates the data base
 
