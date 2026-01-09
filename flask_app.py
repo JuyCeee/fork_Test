@@ -213,6 +213,8 @@ def timetable():
         timetable = None
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
     # Hier übergeben wir die Rohdaten an das Template
+    conn.close()
+
     return render_template("timetable.html", timetable=timetable)
 
 @app.route("/", methods=["GET", "POST"])
