@@ -181,7 +181,7 @@ def timetable():
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
     LEFT JOIN message m ON t.message_id = m.id
-    WHERE s.shortened = "IU"
+    WHERE s.shortened = 'IU'
     ORDER BY t.start_time
     """
     timetable = db_read(query, ())
