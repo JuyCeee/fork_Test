@@ -5,11 +5,11 @@ import os
 import git
 import hmac
 import hashlib
-from db import db_read, db_write, get_conn
+from db import db_read, db_write
 from auth import login_manager, authenticate, register_user
 from flask_login import login_user, logout_user, login_required, current_user
 import logging
-from filltimetable import upsert_db, check_if_already_there
+from filltimetable import upsert_db
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -143,7 +143,8 @@ def overview():
         s.shortened AS subject_short,
         h.txt AS homework_text,
         m.message AS lesson_message,
-        t.exam AS exam
+        h.txt,
+        t.exam
     FROM timetable t
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
@@ -173,7 +174,6 @@ def timetable():
         tea.initials AS teacher_initials,
         h.txt AS homework_text,
         m.message AS lesson_message
-        
     FROM timetable t
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
@@ -184,7 +184,7 @@ def timetable():
     LEFT JOIN teacher tea ON ctt.teacher_id = tea.id
     ORDER BY t.start_time
     """
-    timetable = db_read(query)
+    timetable = db_read(query, ())
     
     # Optional: Zeitstempel (ms) in lesbare Objekte umwandeln, falls nötig
     # Hier übergeben wir die Rohdaten an das Template
@@ -205,8 +205,8 @@ def complete():
 @app.route("/filltimetable", methods=["GET"])
 @login_required
 def filltimetable_route():
-    upsert_db()
-    return redirect(url_for("timetable"))
+    upsert_db();
+    return timetable();
     
 if __name__ == "__main__":
     app.run()
