@@ -162,6 +162,7 @@ def overview():
 
 @app.route("/timetable", methods=["GET"])
 @login_required
+sorting_factor = "3h"
 def timetable(sorting_factor):
     x = True
     cursor = conn.cursor(dictionary=True, buffered=True)
