@@ -96,4 +96,28 @@
             <rect x="2169.95" y="6827.524" width="1187.8" height="1761.818" style="fill:rgb(115,140,151);"/>
         </g>
     </g>
+
+    <g id="lessons-container">
+      {% for lesson in overview %}
+          {# 100px per hour, starting at 8:00 (28800000 ms) #}
+          {% set y_pos = (lesson.start_time % 86400000 - 28800000) / 36000 %}
+        
+        
+        <g transform="translate(500, {{ y_pos }})">
+          <rect width="400" height="80" rx="10" style="fill:rgb(186,199,205); stroke:black; stroke-width:2;" />
+        
+          <text x="10" y="30" font-family="Anton" font-size="20" fill="black">
+              {{ lesson.subject_short }} - {{ lesson.room_number }}
+          </text>
+          
+          <text x="10" y="55" font-family="Arial" font-size="14" fill="#333">
+            {{ lesson.teacher_initials }} | {{ lesson.lesson_message or '' }}
+        </text>
+        
+        {% if lesson.homework_text %}
+            <circle cx="380" cy="20" r="5" fill="red" /> {% endif %}
+        </g>
+    {% endfor %}
+    </g>
+
 </svg>
