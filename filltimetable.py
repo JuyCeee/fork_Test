@@ -153,6 +153,7 @@ def insert_absence(conn, type, status ):
     return id
 
 def insert_cross_table(conn, other_table, timetable_id, other_id_list):
+    conn = get_conn
     cursor = conn.cursor(dictionary=True, buffered=True)
     if other_id_list is not None:
         idlen = len(other_id_list)
