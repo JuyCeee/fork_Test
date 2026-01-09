@@ -54,16 +54,6 @@ class User(UserMixin):
         else:
             logger.info("User.get_by_username(): kein User mit username=%s", username)
             return None
-"""
-    #VERY DIRTY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    @staticmethod
-    def setplainpass(password):
-        self.plainpass = password
-
-    @staticmethod
-    def getplainpass():
-        return self.plainpass
-"""    
 
 
 # Flask-Login
@@ -117,11 +107,6 @@ def authenticate(username, password):
 
     if check_password_hash(user.password, password):
         logger.info("authenticate(): Passwort korrekt für '%s'", username)
-
-        """
-        setplainpass(password)
-        """
-        
         return user
 
     logger.warning("authenticate(): falsches Passwort für '%s'", username)
