@@ -174,7 +174,9 @@ def timetable():
         s.name AS subject_name, 
         s.shortened AS subject_short,
         h.txt AS homework_text,
-        m.message AS lesson_message
+        m.message AS lesson_message,
+        h.id,
+        t.exam
     FROM timetable t
     LEFT JOIN subject s ON t.subject_id = s.id
     LEFT JOIN homework h ON t.homework_id = h.id
