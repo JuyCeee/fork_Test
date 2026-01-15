@@ -355,7 +355,7 @@
 
       {% for lesson in timetable %}
 
-          {% set y_pos = (lesson.start_time % DAY_MS - 28800000) / 36000 %}
+          {% set y_pos = (lesson.start_time % DAY_MS - 28800000) / 1800 %}
           {% set day_index = ((lesson.start_time // DAY_MS + WEEK_OFFSET) % 7) %}
           {% set x_pos = BASE_X + day_index * DAY_WIDTH %}
 
