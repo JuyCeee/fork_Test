@@ -352,15 +352,23 @@
       {% set WEEK_OFFSET = 3 %}
       {% set DAY_WIDTH = 575 %}
       {% set BASE_X = 500 %}
+      {% set MS_TO_PX = 21000 %}
 
       {% for lesson in timetable %}
 
-          {% set y_pos = (lesson.start_time % DAY_MS - 28800000) / 21000 %}
+          {# Vertical position based on start time #}
+          {% set y_pos = (lesson.start_time % DAY_MS - 28800000) / MS_TO_PX %}
+
+          {# Horizontal position based on day of week #}
           {% set day_index = ((lesson.start_time // DAY_MS + WEEK_OFFSET) % 7) %}
           {% set x_pos = BASE_X + day_index * DAY_WIDTH %}
 
+          {# Height based on lesson duration #}
+          {% set duration_ms = lesson.end_time - lesson.start_time %}
+          {% set height = duration_ms / MS_TO_PX %}
+
           <g transform="translate({{ x_pos }}, {{ y_pos }})">
-            <rect width="400" height="80" rx="10"
+            <rect width="400" height="{{ height }}" rx="10"
                   style="fill:rgb(186,199,205); stroke:black; stroke-width:2;" />
 
             <text x="10" y="30" font-family="Anton" font-size="20" fill="black">
